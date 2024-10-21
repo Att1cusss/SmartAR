@@ -1,0 +1,406 @@
+contract,fp,reason
+2018-10299.sol,"[RepairTarget] PausableToken:batchTransfer:262
+CODE: i++
+OPERATION: [++] i
+SSA: i_2 [+] 1 --> i_3
+",context_constrain
+2018-10468.sol,"[RepairTarget] UselessEthereumToken:transferFrom:49
+CODE: msg.data.length < (3 * 32) + 4
+OPERATION: 3 [*] 32
+SSA: 3 [*] 32 --> TMP_10
+",safe_range
+2018-10468.sol,"[RepairTarget] UselessEthereumToken:transferFrom:49
+CODE: msg.data.length < (3 * 32) + 4
+OPERATION: (3 * 32) [+] 4
+SSA: TMP_10 [+] 4 --> TMP_11
+",safe_range
+2018-10468.sol,"[RepairTarget] UselessEthereumToken:transferFrom:58
+CODE: bool overflowed = balances[_to] + _value > balances[_to]
+OPERATION: balances[_to] [+] _value
+SSA: REF_11 [+] _value_1 --> TMP_16
+",safe_check
+2018-10706.sol,"[RepairTarget] Token:transferMulti:249
+CODE: j++
+OPERATION: [++] j
+SSA: j_1 [+] 1 --> j_2
+",context_constrain
+2018-10706.sol,"[RepairTarget] Token:transferMulti:253
+CODE: i++
+OPERATION: [++] i
+SSA: i_1 [+] 1 --> i_2
+",context_constrain
+2018-11239.sol,"[RepairTarget] Hexagon:burn:41
+CODE: balanceOf[msg.sender] -= _value
+OPERATION: balanceOf[msg.sender] [-=] _value
+SSA: REF_2 [-] _value_1 --> REF_2
+",context_constrain
+2018-11411.sol,"[RepairTarget] DimonCoin:distributeFUD:43
+CODE: i++
+OPERATION: [++] i
+SSA: i_2 [+] 1 --> i_3
+",context_constrain
+2018-11411.sol,"[RepairTarget] DimonCoin:transfer:70
+CODE: bool overflowed = balances[_to] + _value < balances[_to]
+OPERATION: balances[_to] [+] _value
+SSA: REF_9 [+] _value_1 --> TMP_10
+",safe_check
+2018-11411.sol,"[RepairTarget] DimonCoin:transferFrom:90
+CODE: bool overflowed = balances[_to] + _value > balances[_to]
+OPERATION: balances[_to] [+] _value
+SSA: REF_16 [+] _value_1 --> TMP_20
+",safe_check
+2018-11561.sol,"[RepairTarget] StandardToken:transfer:51
+CODE: balances[msg.sender] -= _value
+OPERATION: balances[msg.sender] [-=] _value
+SSA: REF_1 [-] _value_1 --> REF_1
+",context_constrain
+2018-11561.sol,"[RepairTarget] StandardToken:transferFrom:63
+CODE: balances[_from] -= _value
+OPERATION: balances[_from] [-=] _value
+SSA: REF_7 [-] _value_1 --> REF_7
+",context_constrain
+2018-11561.sol,"[RepairTarget] StandardToken:transferFrom:64
+CODE: allowed[_from][msg.sender] -= _value
+OPERATION: allowed[_from][msg.sender] [-=] _value
+SSA: REF_9 [-] _value_1 --> REF_9
+",context_constrain
+2018-11561.sol,"[RepairTarget] StandardToken:distributeToken:71
+CODE: i++
+OPERATION: [++] i
+SSA: i_2 [+] 1 --> i_3
+",context_constrain
+2018-11687.sol,"[RepairTarget] BitcoinRed:distributeBTR:40
+CODE: i++
+OPERATION: [++] i
+SSA: i_2 [+] 1 --> i_3
+",context_constrain
+2018-11687.sol,"[RepairTarget] BitcoinRed:transfer:58
+CODE: balances[msg.sender] >= _amount && _amount > 0 && balances[_to] + _amount > balances[_to]
+OPERATION: balances[_to] [+] _amount
+SSA: REF_8 [+] _amount_1 --> TMP_15
+",safe_check
+2018-11687.sol,"[RepairTarget] BitcoinRed:transfer:59
+CODE: balances[msg.sender] -= _amount
+OPERATION: balances[msg.sender] [-=] _amount
+SSA: REF_10 [-] _amount_1 --> REF_10
+",context_constrain
+2018-11687.sol,"[RepairTarget] BitcoinRed:transfer:60
+CODE: balances[_to] += _amount
+OPERATION: balances[_to] [+=] _amount
+SSA: REF_11 [+] _amount_1 --> REF_11
+",context_constrain
+2018-12025-3.sol,"[RepairTarget] UselessEthereumToken:transferFrom:53
+CODE: msg.data.length < (3 * 32) + 4
+OPERATION: 3 [*] 32
+SSA: 3 [*] 32 --> TMP_10
+",safe_range
+2018-12025-3.sol,"[RepairTarget] UselessEthereumToken:transferFrom:53
+CODE: msg.data.length < (3 * 32) + 4
+OPERATION: (3 * 32) [+] 4
+SSA: TMP_10 [+] 4 --> TMP_11
+",safe_range
+2018-12025-3.sol,"[RepairTarget] UselessEthereumToken:transferFrom:62
+CODE: bool overflowed = balances[_to] + _value > balances[_to]
+OPERATION: balances[_to] [+] _value
+SSA: REF_11 [+] _value_1 --> TMP_16
+",safe_check
+2018-13071.sol,"[RepairTarget] CCindexToken:distributeTokens:166
+CODE: i++
+OPERATION: [++] i
+SSA: i_2 [+] 1 --> i_3
+",context_constrain
+2018-13071.sol,"[RepairTarget] CCindexToken:distributeTokens:167
+CODE: address holder = addresses[i+1]
+OPERATION: i [+] 1
+SSA: i_2 [+] 1 --> TMP_45
+",context_constrain
+2018-13071.sol,"[RepairTarget] CCindexToken:distributeTokens:168
+CODE: uint reward = balanceOf[holder] * 3 / 100
+OPERATION: balanceOf[holder] * 3 [/] 100
+SSA: TMP_46 [/] 100 --> TMP_47
+",context_constrain
+2018-13091.sol,"[RepairTarget] sumocoin:distributeToken:200
+CODE: i++
+OPERATION: [++] i
+SSA: i_2 [+] 1 --> i_3
+",context_constrain
+2018-13113.sol,"[RepairTarget] StandardToken:transfer:49
+CODE: balances[msg.sender] -= _value
+OPERATION: balances[msg.sender] [-=] _value
+SSA: REF_1 [-] _value_1 --> REF_1
+",context_constrain
+2018-13113.sol,"[RepairTarget] StandardToken:transferFrom:61
+CODE: balances[_from] -= _value
+OPERATION: balances[_from] [-=] _value
+SSA: REF_7 [-] _value_1 --> REF_7
+",context_constrain
+2018-13113.sol,"[RepairTarget] StandardToken:transferFrom:62
+CODE: allowed[_from][msg.sender] -= _value
+OPERATION: allowed[_from][msg.sender] [-=] _value
+SSA: REF_9 [-] _value_1 --> REF_9
+",context_constrain
+2018-13144.sol,"[RepairTarget] StandardToken:transfer:37
+CODE: balances[msg.sender] -= _value
+OPERATION: balances[msg.sender] [-=] _value
+SSA: REF_1 [-] _value_1 --> REF_1
+",context_constrain
+2018-13225.sol,"[RepairTarget] token:transfer:53
+CODE: assert (balanceOf[_to] + _value >= balanceOf[_to])
+OPERATION: balanceOf[_to] [+] _value
+SSA: REF_2 [+] _value_1 --> TMP_5
+",safe_check
+2018-13225.sol,"[RepairTarget] token:transfer:54
+CODE: balanceOf[msg.sender] -= _value
+OPERATION: balanceOf[msg.sender] [-=] _value
+SSA: REF_4 [-] _value_1 --> REF_4
+",context_constrain
+2018-13225.sol,"[RepairTarget] token:transfer:55
+CODE: balanceOf[_to] += _value
+OPERATION: balanceOf[_to] [+=] _value
+SSA: REF_5 [+] _value_1 --> REF_5
+",context_constrain
+2018-13225.sol,"[RepairTarget] MyYLCToken:transfer:118
+CODE: assert (balanceOf[_to] + _value >= balanceOf[_to])
+OPERATION: balanceOf[_to] [+] _value
+SSA: REF_37 [+] _value_1 --> TMP_43
+",safe_check
+2018-13225.sol,"[RepairTarget] MyYLCToken:transfer:120
+CODE: balanceOf[msg.sender] -= _value
+OPERATION: balanceOf[msg.sender] [-=] _value
+SSA: REF_40 [-] _value_1 --> REF_40
+",context_constrain
+2018-13225.sol,"[RepairTarget] MyYLCToken:transfer:121
+CODE: balanceOf[_to] += _value
+OPERATION: balanceOf[_to] [+=] _value
+SSA: REF_41 [+] _value_1 --> REF_41
+",context_constrain
+2018-13225.sol,"[RepairTarget] MyYLCToken:burn:175
+CODE: balanceOf[msg.sender] -= amount
+OPERATION: balanceOf[msg.sender] [-=] amount
+SSA: REF_62 [-] amount_1 --> REF_62
+",context_constrain
+2018-13326.sol,"[RepairTarget] StandardToken:transfer:49
+CODE: balances[msg.sender] -= _value
+OPERATION: balances[msg.sender] [-=] _value
+SSA: REF_1 [-] _value_1 --> REF_1
+",context_constrain
+2018-13326.sol,"[RepairTarget] StandardToken:transferFrom:61
+CODE: balances[_from] -= _value
+OPERATION: balances[_from] [-=] _value
+SSA: REF_7 [-] _value_1 --> REF_7
+",context_constrain
+2018-13326.sol,"[RepairTarget] StandardToken:transferFrom:62
+CODE: allowed[_from][msg.sender] -= _value
+OPERATION: allowed[_from][msg.sender] [-=] _value
+SSA: REF_9 [-] _value_1 --> REF_9
+",context_constrain
+2018-13327.sol,"[RepairTarget] StandardToken:transfer:26
+CODE: balances[msg.sender] -= _value
+OPERATION: balances[msg.sender] [-=] _value
+SSA: REF_1 [-] _value_1 --> REF_1
+",context_constrain
+2018-13327.sol,"[RepairTarget] StandardToken:transferFrom:36
+CODE: balances[_from] -= _value
+OPERATION: balances[_from] [-=] _value
+SSA: REF_7 [-] _value_1 --> REF_7
+",context_constrain
+2018-13327.sol,"[RepairTarget] StandardToken:transferFrom:37
+CODE: allowed[_from][msg.sender] -= _value
+OPERATION: allowed[_from][msg.sender] [-=] _value
+SSA: REF_9 [-] _value_1 --> REF_9
+",context_constrain
+2018-13493.sol,"[RepairTarget] TokenERC20:burn:190
+CODE: balanceOf[msg.sender] -= _value
+OPERATION: balanceOf[msg.sender] [-=] _value
+SSA: REF_18 [-] _value_2 --> REF_18
+",context_constrain
+2018-13493.sol,"[RepairTarget] DaddyToken:distributeToken:247
+CODE: i++
+OPERATION: [++] i
+SSA: i_2 [+] 1 --> i_3
+",context_constrain
+2018-13625.sol,"[RepairTarget] Krown:notifyAuthority:195
+CODE: balanceOf[msg.sender] -= notificationFee
+OPERATION: balanceOf[msg.sender] [-=] notificationFee
+SSA: REF_65 [-] notificationFee_1 --> REF_65
+",context_constrain
+2018-13625.sol,"[RepairTarget] Krown:burnlvlToken:240
+CODE: balanceOf[_from] -= _value
+OPERATION: balanceOf[_from] [-=] _value
+SSA: REF_81 [-] _value_1 --> REF_81
+",context_constrain
+2018-13703.sol,"[RepairTarget] CERB_Coin:sellOffline:68
+CODE: remaining = remaining - finalTokens
+OPERATION: remaining [-] finalTokens
+SSA: remaining_3 [-] finalTokens_1 --> TMP_4
+",context_constrain
+2018-13779.sol,"[RepairTarget] token:transfer:52
+CODE: assert (balanceOf[_to] + _value >= balanceOf[_to])
+OPERATION: balanceOf[_to] [+] _value
+SSA: REF_2 [+] _value_1 --> TMP_5
+",safe_check
+2018-13779.sol,"[RepairTarget] token:transfer:53
+CODE: balanceOf[msg.sender] -= _value
+OPERATION: balanceOf[msg.sender] [-=] _value
+SSA: REF_4 [-] _value_1 --> REF_4
+",context_constrain
+2018-13779.sol,"[RepairTarget] token:transfer:54
+CODE: balanceOf[_to] += _value
+OPERATION: balanceOf[_to] [+=] _value
+SSA: REF_5 [+] _value_1 --> REF_5
+",context_constrain
+2018-13779.sol,"[RepairTarget] YLCToken:transfer:117
+CODE: assert (balanceOf[_to] + _value >= balanceOf[_to])
+OPERATION: balanceOf[_to] [+] _value
+SSA: REF_37 [+] _value_1 --> TMP_43
+",safe_check
+2018-13779.sol,"[RepairTarget] YLCToken:transfer:119
+CODE: balanceOf[msg.sender] -= _value
+OPERATION: balanceOf[msg.sender] [-=] _value
+SSA: REF_40 [-] _value_1 --> REF_40
+",context_constrain
+2018-13779.sol,"[RepairTarget] YLCToken:transfer:120
+CODE: balanceOf[_to] += _value
+OPERATION: balanceOf[_to] [+=] _value
+SSA: REF_41 [+] _value_1 --> REF_41
+",context_constrain
+2018-13779.sol,"[RepairTarget] YLCToken:burn:174
+CODE: balanceOf[msg.sender] -= amount
+OPERATION: balanceOf[msg.sender] [-=] amount
+SSA: REF_62 [-] amount_1 --> REF_62
+",context_constrain
+2018-13836.sol,"[RepairTarget] RocketCoin:multiTransfer:71
+CODE: a++
+OPERATION: [++] a
+SSA: a_2 [+] 1 --> a_3
+",context_constrain
+2018-13836.sol,"[RepairTarget] RocketCoin:multiTransfer:75
+CODE: balances[msg.sender] -= totalAmount
+OPERATION: balances[msg.sender] [-=] totalAmount
+SSA: REF_18 [-] totalAmount_1 --> REF_18
+",context_constrain
+2018-13836.sol,"[RepairTarget] RocketCoin:multiTransfer:76
+CODE: b++
+OPERATION: [++] b
+SSA: b_2 [+] 1 --> b_3
+",context_constrain
+2018-13836.sol,"[RepairTarget] RocketCoin:transferFrom:87
+CODE: balances[_from] -= _amount
+OPERATION: balances[_from] [-=] _amount
+SSA: REF_29 [-] _amount_1 --> REF_29
+",context_constrain
+2018-13836.sol,"[RepairTarget] RocketCoin:transferFrom:88
+CODE: allowed[_from][msg.sender] -= _amount
+OPERATION: allowed[_from][msg.sender] [-=] _amount
+SSA: REF_31 [-] _amount_1 --> REF_31
+",context_constrain
+2018-14001.sol,"[RepairTarget] ExtendetdToken:batchTransfer:44
+CODE: balanceOf[msg.sender] -= amount
+OPERATION: balanceOf[msg.sender] [-=] amount
+SSA: REF_34 [-] amount_1 --> REF_34
+",context_constrain
+2018-14001.sol,"[RepairTarget] ExtendetdToken:batchTransfer:45
+CODE: i++
+OPERATION: [++] i
+SSA: i_2 [+] 1 --> i_3
+",context_constrain
+2018-14002.sol,"[RepairTarget] MP3Coin:distribute:67
+CODE: a++
+OPERATION: [++] a
+SSA: a_2 [+] 1 --> a_3
+",context_constrain
+2018-14002.sol,"[RepairTarget] MP3Coin:distribute:73
+CODE: balances[msg.sender] -= totalAmount
+OPERATION: balances[msg.sender] [-=] totalAmount
+SSA: REF_22 [-] totalAmount_1 --> REF_22
+",context_constrain
+2018-14002.sol,"[RepairTarget] MP3Coin:distribute:75
+CODE: b++
+OPERATION: [++] b
+SSA: b_2 [+] 1 --> b_3
+",context_constrain
+2018-14003.sol,"[RepairTarget] WMCToken:batchTransfer:194
+CODE: balanceOf[msg.sender] -= amount
+OPERATION: balanceOf[msg.sender] [-=] amount
+SSA: REF_59 [-] amount_1 --> REF_59
+",context_constrain
+2018-14003.sol,"[RepairTarget] WMCToken:batchTransfer:195
+CODE: i++
+OPERATION: [++] i
+SSA: i_2 [+] 1 --> i_3
+",context_constrain
+2018-14004.sol,"[RepairTarget] Globecoin:distribute_100_tokens_to_many:226
+CODE: ++)
+OPERATION: [++] +
+SSA: i_2 [+] 1 --> i_3
+",context_constrain
+2018-14005.sol,"[RepairTarget] MalaysianCoin:transferAUTOtokens10:215
+CODE: ++)
+OPERATION: [++] +
+SSA: i_2 [+] 1 --> i_3
+",context_constrain
+2018-14005.sol,"[RepairTarget] MalaysianCoin:transferAUTOtokens5:226
+CODE: ++)
+OPERATION: [++] +
+SSA: i_2 [+] 1 --> i_3
+",context_constrain
+2018-14005.sol,"[RepairTarget] MalaysianCoin:transferAUTOtoken1:238
+CODE: ++)
+OPERATION: [++] +
+SSA: i_2 [+] 1 --> i_3
+",context_constrain
+2018-14006.sol,"[RepairTarget] NGToken:multipleTransfer:90
+CODE: ++i
+OPERATION: [++] i
+SSA: i_2 [+] 1 --> i_3
+",context_constrain
+2018-14006.sol,"[RepairTarget] NGToken:batchTransfer:101
+CODE: ++i
+OPERATION: [++] i
+SSA: i_2 [+] 1 --> i_3
+",context_constrain
+2018-14006.sol,"[RepairTarget] NGToken:batchTransfer:105
+CODE: balances[msg.sender] -= value
+OPERATION: balances[msg.sender] [-=] value
+SSA: REF_22 [-] value_1 --> REF_22
+",context_constrain
+2018-14576.sol,"[RepairTarget] SunContractToken:mintTokens:154
+CODE: balances[_to] + _amount < balances[_to]
+OPERATION: balances[_to] [+] _amount
+SSA: REF_26 [+] _amount_1 --> TMP_21
+",safe_check
+2018-14576.sol,"[RepairTarget] SunContractToken:mintTokens:156
+CODE: balances[_to] += _amount
+OPERATION: balances[_to] [+=] _amount
+SSA: REF_28 [+] _amount_1 --> REF_28
+",context_constrain
+2018-18665.sol,"[RepairTarget] StandardToken:transferFrom:27
+CODE: balances[_from] -= _value
+OPERATION: balances[_from] [-=] _value
+SSA: REF_7 [-] _value_1 --> REF_7
+",context_constrain
+2018-18665.sol,"[RepairTarget] StandardToken:transferFrom:28
+CODE: allowed[_from][msg.sender] -= _value
+OPERATION: allowed[_from][msg.sender] [-=] _value
+SSA: REF_9 [-] _value_1 --> REF_9
+",context_constrain
+2021-33403.sol,"[RepairTarget] BlocklancerToken:transfer:114
+CODE: senderBalance -= _value
+OPERATION: senderBalance [-=] _value
+SSA: senderBalance_1 [-] _value_1 --> senderBalance_2
+",context_constrain
+BECToken.sol,"[RepairTarget] PausableToken:batchTransfer:263
+CODE: i++
+OPERATION: [++] i
+SSA: i_2 [+] 1 --> i_3
+",context_constrain
+insecure_transfer.sol,"[RepairTarget] IntegerOverflowAdd:transfer:16
+CODE: balanceOf[msg.sender] -= _value
+OPERATION: balanceOf[msg.sender] [-=] _value
+SSA: REF_1 [-] _value_1 --> REF_1
+",context_constrain
+tokensalechallenge.sol,"[RepairTarget] TokenSaleChallenge:sell:30
+CODE: balanceOf[msg.sender] -= numTokens
+OPERATION: balanceOf[msg.sender] [-=] numTokens
+SSA: REF_2 [-] numTokens_1 --> REF_2
+",context_constrain

@@ -1,0 +1,188 @@
+[
+    {
+        "contract": "0x4ceda7906a5ed2179785cd3a40a69ee8bc99c466",
+        "src": 1597811,
+        "not_reuse": 1606025,
+        "reuse": 1600018
+    },
+    {
+        "contract": "0x3d34cc988d583dd2757acaa18a1e90cfab8b7b1d",
+        "src": 1670371,
+        "not_reuse": 1701606,
+        "reuse": 1695599
+    },
+    {
+        "contract": "0x1d9fe29aec8852d7a32ac26b695c258840feba15",
+        "src": 641160,
+        "not_reuse": 659779,
+        "reuse": 659779
+    },
+    {
+        "contract": "0xffb43cb1b79ed46c10d6b6c577da5b6ae50ede7c",
+        "src": 842853,
+        "not_reuse": 861472,
+        "reuse": 857266
+    },
+    {
+        "contract": "0xf5d161f170cb657a91216bebe3cdfc7738856b4d",
+        "src": 1981354,
+        "not_reuse": 2034811,
+        "reuse": 2027203
+    },
+    {
+        "contract": "0xf45546fcb8c604703a0c5f1a652f01ce452ec511",
+        "src": 843253,
+        "not_reuse": 861872,
+        "reuse": 857666
+    },
+    {
+        "contract": "0xf0e3ed8c38ba9cca1ab013bb6b9de822e536bfce",
+        "src": 940707,
+        "not_reuse": 968540,
+        "reuse": 966533
+    },
+    {
+        "contract": "0xed16f9f3fa7f5f05d447d361318475d989ac4641",
+        "src": 1341314,
+        "not_reuse": 1371126,
+        "reuse": 1358520
+    },
+    {
+        "contract": "0xe9cef5d87dbe063c0ed3194bc8830227e1916d6d",
+        "src": 974160,
+        "not_reuse": 979967,
+        "reuse": 983573
+    },
+    {
+        "contract": "0xe8da050c3140183d4f5f01e048ac136e2da5253f",
+        "src": 5269179,
+        "not_reuse": 5276595,
+        "reuse": 5272387
+    },
+    {
+        "contract": "0xe701cd3329057aea9d54300ddd05e41b8d74727a",
+        "src": 916374,
+        "not_reuse": 964020,
+        "reuse": 956613
+    },
+    {
+        "contract": "0xe2b7d18eb4a6358b78483ff095408f240a96596e",
+        "src": 1310908,
+        "not_reuse": 1319115,
+        "reuse": 1313108
+    },
+    {
+        "contract": "0xdaad1c757471186c79fa044d39cd9bbb26b84e35",
+        "src": 1529394,
+        "not_reuse": 1556418,
+        "reuse": 1544015
+    },
+    {
+        "contract": "0x4e86721a4e00d7167c11d9cfd2480403bb630378",
+        "src": 895336,
+        "not_reuse": 905549,
+        "reuse": 904949
+    },
+    {
+        "contract": "0x3fd8f39a962efda04956981c31ab89fab5fb8bc8",
+        "src": 1059953,
+        "not_reuse": 1093993,
+        "reuse": 1087986
+    },
+    {
+        "contract": "0x2bdcd9ae2be26d3324ef75bcf64b3cc246302754",
+        "src": 1403347,
+        "not_reuse": 1416561,
+        "reuse": 1406554
+    },
+    {
+        "contract": "0x2addf9e74582b970e93c37e0cd0452735e5852ab",
+        "src": 1767622,
+        "not_reuse": 1775025,
+        "reuse": 1770825
+    },
+    {
+        "contract": "0x0df6f67b17c515b5a78b1b38fa9d6c171f65abf3",
+        "src": 1326434,
+        "not_reuse": 1359049,
+        "reuse": 1352046
+    },
+    {
+        "contract": "0x0c4911ba2a7ef0a82e7bfce61b7e358121196ba1",
+        "src": 3509409,
+        "not_reuse": 3522623,
+        "reuse": 3510809
+    },
+    {
+        "contract": "0xe430be39098b4cb1897cd07c439edff3e23c8f29",
+        "src": 959517,
+        "not_reuse": 978536,
+        "reuse": 976130
+    },
+    {
+        "contract": "0xdab5dfa0966c3435da991b39d205c3ba1c64fe31",
+        "src": 1609960,
+        "not_reuse": 1616363,
+        "reuse": 1616363
+    },
+    {
+        "contract": "0xd318914b05ad3c4be34e71e02d4fab8dbf66dc57",
+        "src": 2288410,
+        "not_reuse": 2325854,
+        "reuse": 2322046
+    },
+    {
+        "contract": "0x5d65d971895edc438f465c17db6992698a52318d",
+        "src": 1589304,
+        "not_reuse": 1634086,
+        "reuse": 1616274
+    },
+    {
+        "contract": "0x6dcf8319b3c6fffd4ac6079a7cc336d1c5562f80",
+        "src": 888216,
+        "not_reuse": 919449,
+        "reuse": 913442
+    },
+    {
+        "contract": "0x0429047892b8a903c0b4fbbd26e85d288f7af958",
+        "src": 902829,
+        "not_reuse": 934062,
+        "reuse": 928055
+    },
+    {
+        "contract": "0xbcff2d15c698d3874bc29aa170c89fd7a6146a4b",
+        "src": 1995729,
+        "not_reuse": 2003536,
+        "reuse": 1998529
+    },
+    {
+        "contract": "0x27dce1ec4d3f72c3e457cc50354f1f975ddef488",
+        "src": 1310908,
+        "not_reuse": 1319115,
+        "reuse": 1313108
+    },
+    {
+        "contract": "0x97f1d12833ba350e847ba19e86ee84ed085fe99e",
+        "src": 743703,
+        "not_reuse": 774929,
+        "reuse": 777335
+    },
+    {
+        "contract": "0x921c149d89ccaa21e9dc0a2529895e078138cc8e",
+        "src": 4292092,
+        "not_reuse": 4312714,
+        "reuse": 4298499
+    },
+    {
+        "contract": "0x74a492720ab2cf59261b14bc89e78f8147a96f61",
+        "src": 1230815,
+        "not_reuse": 1242828,
+        "reuse": 1235421
+    },
+    {
+        "contract": "0x575cb87ab3c2329a0248c7d70e0ead8e57f3e3f7",
+        "src": 1535003,
+        "not_reuse": 1561171,
+        "reuse": 1566271
+    }
+]

@@ -1,0 +1,1883 @@
+contract,target,fp_tag,filtered
+2018-10299.sol,"[RepairTarget] PausableToken:batchTransfer:257
+CODE: uint256 amount = uint256(cnt) * _value
+OPERATION: uint256(cnt) [*] _value
+SSA: TMP_111 [*] _value_1 --> TMP_112
+",,
+2018-10299.sol,"[RepairTarget] PausableToken:batchTransfer:262
+CODE: i++
+OPERATION: [++] i
+SSA: i_2 [+] 1 --> i_3
+",1.0,1.0
+2018-10468.sol,"[RepairTarget] UselessEthereumToken:transferFrom:49
+CODE: msg.data.length < (3 * 32) + 4
+OPERATION: 3 [*] 32
+SSA: 3 [*] 32 --> TMP_10
+",1.0,1.0
+2018-10468.sol,"[RepairTarget] UselessEthereumToken:transferFrom:49
+CODE: msg.data.length < (3 * 32) + 4
+OPERATION: (3 * 32) [+] 4
+SSA: TMP_10 [+] 4 --> TMP_11
+",1.0,1.0
+2018-10468.sol,"[RepairTarget] UselessEthereumToken:transferFrom:58
+CODE: bool overflowed = balances[_to] + _value > balances[_to]
+OPERATION: balances[_to] [+] _value
+SSA: REF_11 [+] _value_1 --> TMP_16
+",1.0,1.0
+2018-10468.sol,"[RepairTarget] UselessEthereumToken:transferFrom:61
+CODE: balances[_to] += _value
+OPERATION: balances[_to] [+=] _value
+SSA: REF_13 [+] _value_1 --> REF_13
+",,
+2018-10468.sol,"[RepairTarget] UselessEthereumToken:transferFrom:62
+CODE: balances[_from] -= _value
+OPERATION: balances[_from] [-=] _value
+SSA: REF_14 [-] _value_1 --> REF_14
+",,
+2018-10468.sol,"[RepairTarget] UselessEthereumToken:transferFrom:64
+CODE: allowed[_from][msg.sender] -= _value
+OPERATION: allowed[_from][msg.sender] [-=] _value
+SSA: REF_16 [-] _value_1 --> REF_16
+",,
+2018-10468.sol,"[RepairTarget] UselessEthereumToken:fallback:119
+CODE: totalContribution += msg.value
+OPERATION: totalContribution [+=] msg.value
+SSA: totalContribution_2 [+] msg.value --> totalContribution_3
+",,
+2018-10468.sol,"[RepairTarget] UselessEthereumToken:fallback:121
+CODE: uint256 tokensIssued = (msg.value * 100)
+OPERATION: msg.value [*] 100
+SSA: msg.value [*] 100 --> TMP_36
+",,
+2018-10468.sol,"[RepairTarget] UselessEthereumToken:fallback:124
+CODE: tokensIssued += totalContribution
+OPERATION: tokensIssued [+=] totalContribution
+SSA: tokensIssued_1 [+] totalContribution_3 --> tokensIssued_2
+",,
+2018-10468.sol,"[RepairTarget] UselessEthereumToken:fallback:134
+CODE: uint256 bonusTokensIssued = (msg.value * 100) * bonusMultiplier
+OPERATION: msg.value [*] 100
+SSA: msg.value [*] 100 --> TMP_40
+",,
+2018-10468.sol,"[RepairTarget] UselessEthereumToken:fallback:134
+CODE: uint256 bonusTokensIssued = (msg.value * 100) * bonusMultiplier
+OPERATION: (msg.value * 100) [*] bonusMultiplier
+SSA: TMP_40 [*] bonusMultiplier_3 --> TMP_41
+",,
+2018-10468.sol,"[RepairTarget] UselessEthereumToken:fallback:135
+CODE: tokensIssued += bonusTokensIssued
+OPERATION: tokensIssued [+=] bonusTokensIssued
+SSA: tokensIssued_2 [+] bonusTokensIssued_1 --> tokensIssued_3
+",,
+2018-10468.sol,"[RepairTarget] UselessEthereumToken:fallback:137
+CODE: totalBonusTokensIssued += bonusTokensIssued
+OPERATION: totalBonusTokensIssued [+=] bonusTokensIssued
+SSA: totalBonusTokensIssued_2 [+] bonusTokensIssued_1 --> totalBonusTokensIssued_3
+",,
+2018-10468.sol,"[RepairTarget] UselessEthereumToken:fallback:141
+CODE: totalSupply += tokensIssued
+OPERATION: totalSupply [+=] tokensIssued
+SSA: totalSupply_2 [+] tokensIssued_5 --> totalSupply_3
+",,
+2018-10468.sol,"[RepairTarget] UselessEthereumToken:fallback:142
+CODE: balances[msg.sender] += tokensIssued
+OPERATION: balances[msg.sender] [+=] tokensIssued
+SSA: REF_27 [+] tokensIssued_5 --> REF_27
+",,
+2018-10706.sol,"[RepairTarget] Token:transferMulti:249
+CODE: j++
+OPERATION: [++] j
+SSA: j_1 [+] 1 --> j_2
+",1.0,1.0
+2018-10706.sol,"[RepairTarget] Token:transferMulti:250
+CODE: amount += _value[j]*10**uint256(decimals)
+OPERATION: _value[j] [*] 10**uint256(decimals)
+SSA: REF_27 [*] TMP_48 --> TMP_49
+",,
+2018-10706.sol,"[RepairTarget] Token:transferMulti:250
+CODE: amount += _value[j]*10**uint256(decimals)
+OPERATION: amount [+=] _value[j]*10**uint256(decimals)
+SSA: amount_1 [+] TMP_49 --> amount_2
+",,
+2018-10706.sol,"[RepairTarget] Token:transferMulti:253
+CODE: i++
+OPERATION: [++] i
+SSA: i_1 [+] 1 --> i_2
+",1.0,1.0
+2018-10706.sol,"[RepairTarget] Token:transferMulti:256
+CODE: balanceOf[_toI] += _valueI
+OPERATION: balanceOf[_toI] [+=] _valueI
+SSA: REF_31 [+] _valueI_1 --> REF_31
+",,
+2018-10706.sol,"[RepairTarget] Token:transferMulti:257
+CODE: balanceOf[msg.sender] -= _valueI
+OPERATION: balanceOf[msg.sender] [-=] _valueI
+SSA: REF_32 [-] _valueI_1 --> REF_32
+",,
+2018-10706.sol,"[RepairTarget] Token:freeze:264
+CODE: _value=_value*10**uint256(decimals)
+OPERATION: _value [*] 10**uint256(decimals)
+SSA: _value_1 [*] TMP_60 --> TMP_61
+",,
+2018-10706.sol,"[RepairTarget] Token:generateTokens:306
+CODE: _amount=_amount*10**uint256(decimals)
+OPERATION: _amount [*] 10**uint256(decimals)
+SSA: _amount_1 [*] TMP_82 --> TMP_83
+",,
+2018-10706.sol,"[RepairTarget] Token:destroyTokens:323
+CODE: _amount=_amount*10**uint256(decimals)
+OPERATION: _amount [*] 10**uint256(decimals)
+SSA: _amount_1 [*] TMP_90 --> TMP_91
+",,
+2018-10706.sol,"[RepairTarget] Token:changeOwner:338
+CODE: balanceOf[newOwner] += balanceOf[owner]
+OPERATION: balanceOf[newOwner] [+=] balanceOf[owner]
+SSA: REF_56 [+] REF_57 --> REF_56
+",,
+2018-10706.sol,"[RepairTarget] Token:changeAirdropTotalQty:363
+CODE: uint256 _token =_airdropTotalQty*10**uint256(decimals)
+OPERATION: _airdropTotalQty [*] 10**uint256(decimals)
+SSA: _airdropTotalQty_1 [*] TMP_102 --> TMP_103
+",,
+2018-11239.sol,"[RepairTarget] Hexagon:burn:41
+CODE: balanceOf[msg.sender] -= _value
+OPERATION: balanceOf[msg.sender] [-=] _value
+SSA: REF_2 [-] _value_1 --> REF_2
+",1.0,1.0
+2018-11239.sol,"[RepairTarget] Hexagon:burn:43
+CODE: balanceOf[0x0] += _value
+OPERATION: balanceOf[0x0] [+=] _value
+SSA: REF_3 [+] _value_1 --> REF_3
+",,
+2018-11239.sol,"[RepairTarget] Hexagon:burn:45
+CODE: currentSupply -= _value
+OPERATION: currentSupply [-=] _value
+SSA: currentSupply_2 [-] _value_1 --> currentSupply_3
+",,
+2018-11335.sol,"[RepairTarget] SPXToken:mint:224
+CODE: require(totalSupply + value <= TOKEN_LIMIT)
+OPERATION: totalSupply [+] value
+SSA: totalSupply_1 [+] value_1 --> TMP_76
+",,
+2018-11335.sol,"[RepairTarget] SPXToken:mint:226
+CODE: balances[holder] += value
+OPERATION: balances[holder] [+=] value
+SSA: REF_92 [+] value_1 --> REF_92
+",,
+2018-11335.sol,"[RepairTarget] SPXToken:mint:227
+CODE: totalSupply += value
+OPERATION: totalSupply [+=] value
+SSA: totalSupply_1 [+] value_1 --> totalSupply_2
+",,
+2018-11411.sol,"[RepairTarget] DimonCoin:distributeFUD:43
+CODE: i++
+OPERATION: [++] i
+SSA: i_2 [+] 1 --> i_3
+",1.0,1.0
+2018-11411.sol,"[RepairTarget] DimonCoin:distributeFUD:47
+CODE: balances[owner] -= _value
+OPERATION: balances[owner] [-=] _value
+SSA: REF_3 [-] _value_1 --> REF_3
+",,
+2018-11411.sol,"[RepairTarget] DimonCoin:distributeFUD:48
+CODE: balances[addresses[i]] += _value
+OPERATION: balances[addresses[i]] [+=] _value
+SSA: REF_5 [+] _value_1 --> REF_5
+",,
+2018-11411.sol,"[RepairTarget] DimonCoin:transfer:70
+CODE: bool overflowed = balances[_to] + _value < balances[_to]
+OPERATION: balances[_to] [+] _value
+SSA: REF_9 [+] _value_1 --> TMP_10
+",,
+2018-11411.sol,"[RepairTarget] DimonCoin:transfer:73
+CODE: balances[msg.sender] -= _value
+OPERATION: balances[msg.sender] [-=] _value
+SSA: REF_11 [-] _value_1 --> REF_11
+",,
+2018-11411.sol,"[RepairTarget] DimonCoin:transfer:74
+CODE: balances[_to] += _value
+OPERATION: balances[_to] [+=] _value
+SSA: REF_12 [+] _value_1 --> REF_12
+",,
+2018-11411.sol,"[RepairTarget] DimonCoin:transferFrom:90
+CODE: bool overflowed = balances[_to] + _value > balances[_to]
+OPERATION: balances[_to] [+] _value
+SSA: REF_16 [+] _value_1 --> TMP_20
+",1.0,1.0
+2018-11411.sol,"[RepairTarget] DimonCoin:transferFrom:93
+CODE: balances[_to] += _value
+OPERATION: balances[_to] [+=] _value
+SSA: REF_18 [+] _value_1 --> REF_18
+",,
+2018-11411.sol,"[RepairTarget] DimonCoin:transferFrom:94
+CODE: balances[_from] -= _value
+OPERATION: balances[_from] [-=] _value
+SSA: REF_19 [-] _value_1 --> REF_19
+",,
+2018-11411.sol,"[RepairTarget] DimonCoin:transferFrom:96
+CODE: allowed[_from][msg.sender] -= _value
+OPERATION: allowed[_from][msg.sender] [-=] _value
+SSA: REF_21 [-] _value_1 --> REF_21
+",,
+2018-11429.sol,"[RepairTarget] ATL:mint:137
+CODE: require(totalSupply + _value <= TOKEN_LIMIT)
+OPERATION: totalSupply [+] _value
+SSA: totalSupply_1 [+] _value_1 --> TMP_58
+",,
+2018-11429.sol,"[RepairTarget] ATL:mint:139
+CODE: balances[_holder] += _value
+OPERATION: balances[_holder] [+=] _value
+SSA: REF_53 [+] _value_1 --> REF_53
+",,
+2018-11429.sol,"[RepairTarget] ATL:mint:140
+CODE: totalSupply += _value
+OPERATION: totalSupply [+=] _value
+SSA: totalSupply_1 [+] _value_1 --> totalSupply_2
+",,
+2018-11446.sol,"[RepairTarget] GRX:increaseTotalSupply:109
+CODE: balanceOf[target] += increaseBy
+OPERATION: balanceOf[target] [+=] increaseBy
+SSA: REF_8 [+] increaseBy_1 --> REF_8
+",,
+2018-11446.sol,"[RepairTarget] GRX:increaseTotalSupply:110
+CODE: totalSupply += increaseBy
+OPERATION: totalSupply [+=] increaseBy
+SSA: totalSupply_3 [+] increaseBy_1 --> totalSupply_4
+",,
+2018-11561.sol,"[RepairTarget] StandardToken:transfer:51
+CODE: balances[msg.sender] -= _value
+OPERATION: balances[msg.sender] [-=] _value
+SSA: REF_1 [-] _value_1 --> REF_1
+",1.0,1.0
+2018-11561.sol,"[RepairTarget] StandardToken:transfer:52
+CODE: balances[_to] += _value
+OPERATION: balances[_to] [+=] _value
+SSA: REF_2 [+] _value_1 --> REF_2
+",,
+2018-11561.sol,"[RepairTarget] StandardToken:transferFrom:62
+CODE: balances[_to] += _value
+OPERATION: balances[_to] [+=] _value
+SSA: REF_6 [+] _value_1 --> REF_6
+",,
+2018-11561.sol,"[RepairTarget] StandardToken:transferFrom:63
+CODE: balances[_from] -= _value
+OPERATION: balances[_from] [-=] _value
+SSA: REF_7 [-] _value_1 --> REF_7
+",1.0,1.0
+2018-11561.sol,"[RepairTarget] StandardToken:transferFrom:64
+CODE: allowed[_from][msg.sender] -= _value
+OPERATION: allowed[_from][msg.sender] [-=] _value
+SSA: REF_9 [-] _value_1 --> REF_9
+",1.0,1.0
+2018-11561.sol,"[RepairTarget] StandardToken:distributeToken:71
+CODE: i++
+OPERATION: [++] i
+SSA: i_2 [+] 1 --> i_3
+",1.0,1.0
+2018-11561.sol,"[RepairTarget] StandardToken:distributeToken:72
+CODE: balances[msg.sender] -= _value
+OPERATION: balances[msg.sender] [-=] _value
+SSA: REF_11 [-] _value_1 --> REF_11
+",,
+2018-11561.sol,"[RepairTarget] StandardToken:distributeToken:73
+CODE: balances[addresses[i]] += _value
+OPERATION: balances[addresses[i]] [+=] _value
+SSA: REF_13 [+] _value_1 --> REF_13
+",,
+2018-11687.sol,"[RepairTarget] BitcoinRed:distributeBTR:40
+CODE: i++
+OPERATION: [++] i
+SSA: i_2 [+] 1 --> i_3
+",1.0,1.0
+2018-11687.sol,"[RepairTarget] BitcoinRed:distributeBTR:41
+CODE: balances[owner] -= 2000 * 10**8
+OPERATION: 2000 [*] 10**8
+SSA: 2000 [*] TMP_3 --> TMP_4
+",,
+2018-11687.sol,"[RepairTarget] BitcoinRed:distributeBTR:41
+CODE: balances[owner] -= 2000 * 10**8
+OPERATION: balances[owner] [-=] 2000 * 10**8
+SSA: REF_2 [-] TMP_4 --> REF_2
+",,
+2018-11687.sol,"[RepairTarget] BitcoinRed:distributeBTR:42
+CODE: balances[addresses[i]] += 2000 * 10**8
+OPERATION: 2000 [*] 10**8
+SSA: 2000 [*] TMP_5 --> TMP_6
+",,
+2018-11687.sol,"[RepairTarget] BitcoinRed:distributeBTR:42
+CODE: balances[addresses[i]] += 2000 * 10**8
+OPERATION: balances[addresses[i]] [+=] 2000 * 10**8
+SSA: 2000 [*] TMP_5 --> TMP_6
+",,
+2018-11687.sol,"[RepairTarget] BitcoinRed:distributeBTR:43
+CODE: Transfer(owner, addresses[i], 2000 * 10**8)
+OPERATION: 2000 [*] 10**8
+SSA: 2000 [*] TMP_7 --> TMP_8
+",,
+2018-11687.sol,"[RepairTarget] BitcoinRed:transfer:58
+CODE: balances[msg.sender] >= _amount && _amount > 0 && balances[_to] + _amount > balances[_to]
+OPERATION: balances[_to] [+] _amount
+SSA: REF_8 [+] _amount_1 --> TMP_15
+",1.0,1.0
+2018-11687.sol,"[RepairTarget] BitcoinRed:transfer:59
+CODE: balances[msg.sender] -= _amount
+OPERATION: balances[msg.sender] [-=] _amount
+SSA: REF_10 [-] _amount_1 --> REF_10
+",1.0,1.0
+2018-11687.sol,"[RepairTarget] BitcoinRed:transfer:60
+CODE: balances[_to] += _amount
+OPERATION: balances[_to] [+=] _amount
+SSA: REF_11 [+] _amount_1 --> REF_11
+",1.0,1.0
+2018-12025-1.sol,"[RepairTarget] FuturXe:mintToken:138
+CODE: balances[target] += mintedAmount
+OPERATION: balances[target] [+=] mintedAmount
+SSA: REF_22 [+] mintedAmount_1 --> REF_22
+",,
+2018-12025-1.sol,"[RepairTarget] FuturXe:mintToken:139
+CODE: totalSupply += mintedAmount
+OPERATION: totalSupply [+=] mintedAmount
+SSA: totalSupply_3 [+] mintedAmount_1 --> totalSupply_4
+",,
+2018-12025-2.sol,"[RepairTarget] RemiCoin:mintToken:138
+CODE: balances[target] += mintedAmount
+OPERATION: balances[target] [+=] mintedAmount
+SSA: REF_22 [+] mintedAmount_1 --> REF_22
+",,
+2018-12025-2.sol,"[RepairTarget] RemiCoin:mintToken:139
+CODE: totalSupply += mintedAmount
+OPERATION: totalSupply [+=] mintedAmount
+SSA: totalSupply_3 [+] mintedAmount_1 --> totalSupply_4
+",,
+2018-12025-3.sol,"[RepairTarget] UselessEthereumToken:transferFrom:53
+CODE: msg.data.length < (3 * 32) + 4
+OPERATION: 3 [*] 32
+SSA: 3 [*] 32 --> TMP_10
+",1.0,1.0
+2018-12025-3.sol,"[RepairTarget] UselessEthereumToken:transferFrom:53
+CODE: msg.data.length < (3 * 32) + 4
+OPERATION: (3 * 32) [+] 4
+SSA: TMP_10 [+] 4 --> TMP_11
+",1.0,1.0
+2018-12025-3.sol,"[RepairTarget] UselessEthereumToken:transferFrom:62
+CODE: bool overflowed = balances[_to] + _value > balances[_to]
+OPERATION: balances[_to] [+] _value
+SSA: REF_11 [+] _value_1 --> TMP_16
+",1.0,1.0
+2018-12025-3.sol,"[RepairTarget] UselessEthereumToken:transferFrom:65
+CODE: balances[_to] += _value
+OPERATION: balances[_to] [+=] _value
+SSA: REF_13 [+] _value_1 --> REF_13
+",,
+2018-12025-3.sol,"[RepairTarget] UselessEthereumToken:transferFrom:66
+CODE: balances[_from] -= _value
+OPERATION: balances[_from] [-=] _value
+SSA: REF_14 [-] _value_1 --> REF_14
+",,
+2018-12025-3.sol,"[RepairTarget] UselessEthereumToken:transferFrom:68
+CODE: allowed[_from][msg.sender] -= _value
+OPERATION: allowed[_from][msg.sender] [-=] _value
+SSA: REF_16 [-] _value_1 --> REF_16
+",,
+2018-12025-3.sol,"[RepairTarget] UselessEthereumToken:fallback:123
+CODE: totalContribution += msg.value
+OPERATION: totalContribution [+=] msg.value
+SSA: totalContribution_2 [+] msg.value --> totalContribution_3
+",,
+2018-12025-3.sol,"[RepairTarget] UselessEthereumToken:fallback:125
+CODE: uint256 tokensIssued = (msg.value * 100)
+OPERATION: msg.value [*] 100
+SSA: msg.value [*] 100 --> TMP_36
+",,
+2018-12025-3.sol,"[RepairTarget] UselessEthereumToken:fallback:128
+CODE: tokensIssued += totalContribution
+OPERATION: tokensIssued [+=] totalContribution
+SSA: tokensIssued_1 [+] totalContribution_3 --> tokensIssued_2
+",,
+2018-12025-3.sol,"[RepairTarget] UselessEthereumToken:fallback:138
+CODE: uint256 bonusTokensIssued = (msg.value * 100) * bonusMultiplier
+OPERATION: msg.value [*] 100
+SSA: msg.value [*] 100 --> TMP_40
+",,
+2018-12025-3.sol,"[RepairTarget] UselessEthereumToken:fallback:138
+CODE: uint256 bonusTokensIssued = (msg.value * 100) * bonusMultiplier
+OPERATION: (msg.value * 100) [*] bonusMultiplier
+SSA: TMP_40 [*] bonusMultiplier_3 --> TMP_41
+",,
+2018-12025-3.sol,"[RepairTarget] UselessEthereumToken:fallback:139
+CODE: tokensIssued += bonusTokensIssued
+OPERATION: tokensIssued [+=] bonusTokensIssued
+SSA: tokensIssued_2 [+] bonusTokensIssued_1 --> tokensIssued_3
+",,
+2018-12025-3.sol,"[RepairTarget] UselessEthereumToken:fallback:141
+CODE: totalBonusTokensIssued += bonusTokensIssued
+OPERATION: totalBonusTokensIssued [+=] bonusTokensIssued
+SSA: totalBonusTokensIssued_2 [+] bonusTokensIssued_1 --> totalBonusTokensIssued_3
+",,
+2018-12025-3.sol,"[RepairTarget] UselessEthereumToken:fallback:145
+CODE: totalSupply += tokensIssued
+OPERATION: totalSupply [+=] tokensIssued
+SSA: totalSupply_2 [+] tokensIssued_5 --> totalSupply_3
+",,
+2018-12025-3.sol,"[RepairTarget] UselessEthereumToken:fallback:146
+CODE: balances[msg.sender] += tokensIssued
+OPERATION: balances[msg.sender] [+=] tokensIssued
+SSA: REF_27 [+] tokensIssued_5 --> REF_27
+",,
+2018-12062.sol,"[RepairTarget] SwftCoin:mintToken:141
+CODE: balanceOf[target] += mintedAmount
+OPERATION: balanceOf[target] [+=] mintedAmount
+SSA: REF_52 [+] mintedAmount_1 --> REF_52
+",,
+2018-12062.sol,"[RepairTarget] SwftCoin:mintToken:142
+CODE: totalSupply += mintedAmount
+OPERATION: totalSupply [+=] mintedAmount
+SSA: totalSupply_3 [+] mintedAmount_1 --> totalSupply_4
+",,
+2018-12063.sol,"[RepairTarget] INTToken:mintToken:150
+CODE: balanceOf[target] += mintedAmount
+OPERATION: balanceOf[target] [+=] mintedAmount
+SSA: REF_49 [+] mintedAmount_1 --> REF_49
+",,
+2018-12063.sol,"[RepairTarget] INTToken:mintToken:151
+CODE: totalSupply += mintedAmount
+OPERATION: totalSupply [+=] mintedAmount
+SSA: totalSupply_7 [+] mintedAmount_1 --> totalSupply_8
+",,
+2018-12067.sol,"[RepairTarget] MyAdvancedToken:mintToken:141
+CODE: balanceOf[target] += mintedAmount
+OPERATION: balanceOf[target] [+=] mintedAmount
+SSA: REF_52 [+] mintedAmount_1 --> REF_52
+",,
+2018-12067.sol,"[RepairTarget] MyAdvancedToken:mintToken:142
+CODE: totalSupply += mintedAmount
+OPERATION: totalSupply [+=] mintedAmount
+SSA: totalSupply_3 [+] mintedAmount_1 --> totalSupply_4
+",,
+2018-12068.sol,"[RepairTarget] MyAdvancedToken:mintToken:141
+CODE: balanceOf[target] += mintedAmount
+OPERATION: balanceOf[target] [+=] mintedAmount
+SSA: REF_52 [+] mintedAmount_1 --> REF_52
+",,
+2018-12068.sol,"[RepairTarget] MyAdvancedToken:mintToken:142
+CODE: totalSupply += mintedAmount
+OPERATION: totalSupply [+=] mintedAmount
+SSA: totalSupply_3 [+] mintedAmount_1 --> totalSupply_4
+",,
+2018-12070.sol,"[RepairTarget] SECToken:mintToken:233
+CODE: balanceOf[target] += mintedAmount
+OPERATION: balanceOf[target] [+=] mintedAmount
+SSA: REF_58 [+] mintedAmount_1 --> REF_58
+",,
+2018-12070.sol,"[RepairTarget] SECToken:mintToken:234
+CODE: totalSupply += mintedAmount
+OPERATION: totalSupply [+=] mintedAmount
+SSA: totalSupply_7 [+] mintedAmount_1 --> totalSupply_8
+",,
+2018-12230.sol,"[RepairTarget] RemiCoin:mintToken:134
+CODE: balances[target] += mintedAmount
+OPERATION: balances[target] [+=] mintedAmount
+SSA: REF_22 [+] mintedAmount_1 --> REF_22
+",,
+2018-12230.sol,"[RepairTarget] RemiCoin:mintToken:135
+CODE: totalSupply += mintedAmount
+OPERATION: totalSupply [+=] mintedAmount
+SSA: totalSupply_3 [+] mintedAmount_1 --> totalSupply_4
+",,
+2018-13041.sol,"[RepairTarget] LinkToken:mint:191
+CODE: balances[_spender] += _value
+OPERATION: balances[_spender] [+=] _value
+SSA: REF_53 [+] _value_1 --> REF_53
+",,
+2018-13041.sol,"[RepairTarget] LinkToken:mint:192
+CODE: totalSupply += _value
+OPERATION: totalSupply [+=] _value
+SSA: totalSupply_2 [+] _value_1 --> totalSupply_3
+",,
+2018-13068.sol,"[RepairTarget] AzurionToken:mintToken:87
+CODE: balanceOf[target] += mintedAmount
+OPERATION: balanceOf[target] [+=] mintedAmount
+SSA: REF_12 [+] mintedAmount_1 --> REF_12
+",,
+2018-13068.sol,"[RepairTarget] AzurionToken:mintToken:88
+CODE: totalSupply += mintedAmount
+OPERATION: totalSupply [+=] mintedAmount
+SSA: totalSupply_3 [+] mintedAmount_1 --> totalSupply_4
+",,
+2018-13069.sol,"[RepairTarget] DYC:mintToken:213
+CODE: balanceOf[target] += mintedAmount
+OPERATION: balanceOf[target] [+=] mintedAmount
+SSA: REF_57 [+] mintedAmount_1 --> REF_57
+",,
+2018-13069.sol,"[RepairTarget] DYC:mintToken:214
+CODE: totalSupply += mintedAmount
+OPERATION: totalSupply [+=] mintedAmount
+SSA: totalSupply_7 [+] mintedAmount_1 --> totalSupply_8
+",,
+2018-13070.sol,"[RepairTarget] EncryptedToken:mintToken:140
+CODE: balanceOf[target] += mintedAmount
+OPERATION: balanceOf[target] [+=] mintedAmount
+SSA: REF_57 [+] mintedAmount_1 --> REF_57
+",,
+2018-13070.sol,"[RepairTarget] EncryptedToken:mintToken:141
+CODE: totalSupply += mintedAmount
+OPERATION: totalSupply [+=] mintedAmount
+SSA: totalSupply_7 [+] mintedAmount_1 --> totalSupply_8
+",,
+2018-13070.sol,"[RepairTarget] EncryptedToken:fallback:162
+CODE: uint amount = msg.value * buyPrice
+OPERATION: msg.value [*] buyPrice
+SSA: msg.value [*] buyPrice_3 --> TMP_86
+",,
+2018-13071.sol,"[RepairTarget] CCindexToken:distributeTokens:166
+CODE: i++
+OPERATION: [++] i
+SSA: i_2 [+] 1 --> i_3
+",1.0,1.0
+2018-13071.sol,"[RepairTarget] CCindexToken:distributeTokens:167
+CODE: address holder = addresses[i+1]
+OPERATION: i [+] 1
+SSA: i_2 [+] 1 --> TMP_45
+",1.0,1.0
+2018-13071.sol,"[RepairTarget] CCindexToken:distributeTokens:168
+CODE: uint reward = balanceOf[holder] * 3 / 100
+OPERATION: balanceOf[holder] [*] 3
+SSA: REF_61 [*] 3 --> TMP_46
+",,
+2018-13071.sol,"[RepairTarget] CCindexToken:distributeTokens:168
+CODE: uint reward = balanceOf[holder] * 3 / 100
+OPERATION: balanceOf[holder] * 3 [/] 100
+SSA: TMP_46 [/] 100 --> TMP_47
+",1.0,1.0
+2018-13071.sol,"[RepairTarget] CCindexToken:distributeTokens:169
+CODE: balanceOf[holder] += reward
+OPERATION: balanceOf[holder] [+=] reward
+SSA: REF_62 [+] reward_1 --> REF_62
+",,
+2018-13071.sol,"[RepairTarget] CCindexToken:distributeTokens:170
+CODE: distributed += reward
+OPERATION: distributed [+=] reward
+SSA: distributed_2 [+] reward_1 --> distributed_3
+",,
+2018-13071.sol,"[RepairTarget] CCindexToken:distributeTokens:175
+CODE: totalSupply += distributed
+OPERATION: totalSupply [+=] distributed
+SSA: totalSupply_3 [+] distributed_2 --> totalSupply_4
+",,
+2018-13071.sol,"[RepairTarget] CCindexToken:mintToken:197
+CODE: balanceOf[target] += mintedAmount
+OPERATION: balanceOf[target] [+=] mintedAmount
+SSA: REF_73 [+] mintedAmount_1 --> REF_73
+",,
+2018-13071.sol,"[RepairTarget] CCindexToken:mintToken:198
+CODE: totalSupply += mintedAmount
+OPERATION: totalSupply [+=] mintedAmount
+SSA: totalSupply_6 [+] mintedAmount_1 --> totalSupply_7
+",,
+2018-13072.sol,"[RepairTarget] Coffeecoin:mintToken:139
+CODE: balanceOf[target] += mintedAmount
+OPERATION: balanceOf[target] [+=] mintedAmount
+SSA: REF_52 [+] mintedAmount_1 --> REF_52
+",,
+2018-13072.sol,"[RepairTarget] Coffeecoin:buy:159
+CODE: uint amount = msg.value * buyRate
+OPERATION: msg.value [*] buyRate
+SSA: msg.value [*] buyRate_2 --> TMP_66
+",,
+2018-13072.sol,"[RepairTarget] Coffeecoin:buy:160
+CODE: balanceOf[msg.sender] += amount
+OPERATION: balanceOf[msg.sender] [+=] amount
+SSA: REF_54 [+] amount_1 --> REF_54
+",,
+2018-13072.sol,"[RepairTarget] Coffeecoin:buy:161
+CODE: balanceOf[owner] -= amount
+OPERATION: balanceOf[owner] [-=] amount
+SSA: REF_55 [-] amount_1 --> REF_55
+",,
+2018-13073.sol,"[RepairTarget] ETHEREUMBLACK:mintToken:141
+CODE: balanceOf[target] += mintedAmount
+OPERATION: balanceOf[target] [+=] mintedAmount
+SSA: REF_52 [+] mintedAmount_1 --> REF_52
+",,
+2018-13073.sol,"[RepairTarget] ETHEREUMBLACK:mintToken:142
+CODE: totalSupply += mintedAmount
+OPERATION: totalSupply [+=] mintedAmount
+SSA: totalSupply_3 [+] mintedAmount_1 --> totalSupply_4
+",,
+2018-13074.sol,"[RepairTarget] FIBToken:mintToken:212
+CODE: balanceOf[target] += mintedAmount
+OPERATION: balanceOf[target] [+=] mintedAmount
+SSA: REF_57 [+] mintedAmount_1 --> REF_57
+",,
+2018-13074.sol,"[RepairTarget] FIBToken:mintToken:213
+CODE: totalSupply += mintedAmount
+OPERATION: totalSupply [+=] mintedAmount
+SSA: totalSupply_7 [+] mintedAmount_1 --> totalSupply_8
+",,
+2018-13075.sol,"[RepairTarget] CarbonExchangeCoinToken:mintToken:225
+CODE: balanceOf[target] += mintedAmount
+OPERATION: balanceOf[target] [+=] mintedAmount
+SSA: REF_58 [+] mintedAmount_1 --> REF_58
+",,
+2018-13075.sol,"[RepairTarget] CarbonExchangeCoinToken:mintToken:226
+CODE: totalSupply += mintedAmount
+OPERATION: totalSupply [+=] mintedAmount
+SSA: totalSupply_8 [+] mintedAmount_1 --> totalSupply_9
+",,
+2018-13075.sol,"[RepairTarget] CarbonExchangeCoinToken:setMinBalance:264
+CODE: = minimumBalanceInFinney * 1 finney;
+	}
+
+	/* tokenname */
+OPERATION:  * 1 finney;
+	}
+
+	/* t [*] nname */
+SSA: minimumBalanceInFinney_1 [*] 1000000000000000 --> TMP_94
+",,
+2018-13076.sol,"[RepairTarget] Betcash:mintToken:139
+CODE: balanceOf[target] += mintedAmount
+OPERATION: balanceOf[target] [+=] mintedAmount
+SSA: REF_52 [+] mintedAmount_1 --> REF_52
+",,
+2018-13076.sol,"[RepairTarget] Betcash:buy:159
+CODE: uint amount = msg.value * buyRate
+OPERATION: msg.value [*] buyRate
+SSA: msg.value [*] buyRate_2 --> TMP_66
+",,
+2018-13076.sol,"[RepairTarget] Betcash:buy:160
+CODE: balanceOf[msg.sender] += amount
+OPERATION: balanceOf[msg.sender] [+=] amount
+SSA: REF_54 [+] amount_1 --> REF_54
+",,
+2018-13076.sol,"[RepairTarget] Betcash:buy:161
+CODE: balanceOf[owner] -= amount
+OPERATION: balanceOf[owner] [-=] amount
+SSA: REF_55 [-] amount_1 --> REF_55
+",,
+2018-13077.sol,"[RepairTarget] CTB:mintToken:163
+CODE: balanceOf[target] += mintedAmount
+OPERATION: balanceOf[target] [+=] mintedAmount
+SSA: REF_49 [+] mintedAmount_1 --> REF_49
+",,
+2018-13077.sol,"[RepairTarget] CTB:mintToken:164
+CODE: totalSupply += mintedAmount
+OPERATION: totalSupply [+=] mintedAmount
+SSA: totalSupply_7 [+] mintedAmount_1 --> totalSupply_8
+",,
+2018-13078.sol,"[RepairTarget] Jitech:mintToken:136
+CODE: balanceOf[target] += mintedAmount
+OPERATION: balanceOf[target] [+=] mintedAmount
+SSA: REF_52 [+] mintedAmount_1 --> REF_52
+",,
+2018-13079.sol,"[RepairTarget] StandardToken:mintToken:135
+CODE: balanceOf[target] += mintedAmount
+OPERATION: balanceOf[target] [+=] mintedAmount
+SSA: REF_57 [+] mintedAmount_1 --> REF_57
+",,
+2018-13079.sol,"[RepairTarget] StandardToken:mintToken:136
+CODE: totalSupply += mintedAmount
+OPERATION: totalSupply [+=] mintedAmount
+SSA: totalSupply_7 [+] mintedAmount_1 --> totalSupply_8
+",,
+2018-13080.sol,"[RepairTarget] Goutex:mintToken:136
+CODE: balanceOf[target] += mintedAmount
+OPERATION: balanceOf[target] [+=] mintedAmount
+SSA: REF_52 [+] mintedAmount_1 --> REF_52
+",,
+2018-13081.sol,"[RepairTarget] GZSToken:mintToken:141
+CODE: balanceOf[target] += mintedAmount
+OPERATION: balanceOf[target] [+=] mintedAmount
+SSA: REF_52 [+] mintedAmount_1 --> REF_52
+",,
+2018-13081.sol,"[RepairTarget] GZSToken:mintToken:142
+CODE: totalSupply += mintedAmount
+OPERATION: totalSupply [+=] mintedAmount
+SSA: totalSupply_3 [+] mintedAmount_1 --> totalSupply_4
+",,
+2018-13081.sol,"[RepairTarget] GZSToken:buy:162
+CODE: uint amount = msg.value * buyRate
+OPERATION: msg.value [*] buyRate
+SSA: msg.value [*] buyRate_2 --> TMP_45
+",,
+2018-13081.sol,"[RepairTarget] GZSToken:buy:163
+CODE: balanceOf[msg.sender] += amount
+OPERATION: balanceOf[msg.sender] [+=] amount
+SSA: REF_54 [+] amount_1 --> REF_54
+",,
+2018-13081.sol,"[RepairTarget] GZSToken:buy:164
+CODE: balanceOf[this] -= amount
+OPERATION: balanceOf[this] [-=] amount
+SSA: REF_55 [-] amount_1 --> REF_55
+",,
+2018-13082.sol,"[RepairTarget] MyAdvancedToken:mintToken:220
+CODE: balanceOf[target] += mintedAmount
+OPERATION: balanceOf[target] [+=] mintedAmount
+SSA: REF_57 [+] mintedAmount_1 --> REF_57
+",,
+2018-13082.sol,"[RepairTarget] MyAdvancedToken:mintToken:221
+CODE: totalSupply += mintedAmount
+OPERATION: totalSupply [+=] mintedAmount
+SSA: totalSupply_7 [+] mintedAmount_1 --> totalSupply_8
+",,
+2018-13083.sol,"[RepairTarget] PlazaToken:mintToken:206
+CODE: balanceOf[target] += mintedAmount
+OPERATION: balanceOf[target] [+=] mintedAmount
+SSA: REF_57 [+] mintedAmount_1 --> REF_57
+",,
+2018-13083.sol,"[RepairTarget] PlazaToken:mintToken:207
+CODE: totalSupply += mintedAmount
+OPERATION: totalSupply [+=] mintedAmount
+SSA: totalSupply_7 [+] mintedAmount_1 --> totalSupply_8
+",,
+2018-13084.sol,"[RepairTarget] GoodTimeCoin:mintToken:129
+CODE: balanceOf[target] += mintedAmount
+OPERATION: balanceOf[target] [+=] mintedAmount
+SSA: REF_50 [+] mintedAmount_1 --> REF_50
+",,
+2018-13084.sol,"[RepairTarget] GoodTimeCoin:mintToken:130
+CODE: totalSupply += mintedAmount
+OPERATION: totalSupply [+=] mintedAmount
+SSA: totalSupply_7 [+] mintedAmount_1 --> totalSupply_8
+",,
+2018-13085.sol,"[RepairTarget] TokenERC20:TokenERC20:85
+CODE: totalSupply = initialSupply * 10 ** uint256(decimals)
+OPERATION: initialSupply [*] 10 ** uint256(decimals)
+SSA: initialSupply_1 [*] TMP_7 --> TMP_8
+",,
+2018-13085.sol,"[RepairTarget] FreeCoin:mintToken:260
+CODE: balances[target] += mintedAmount
+OPERATION: balances[target] [+=] mintedAmount
+SSA: REF_68 [+] mintedAmount_1 --> REF_68
+",,
+2018-13085.sol,"[RepairTarget] FreeCoin:mintToken:261
+CODE: totalSupply += mintedAmount
+OPERATION: totalSupply [+=] mintedAmount
+SSA: totalSupply_7 [+] mintedAmount_1 --> totalSupply_8
+",,
+2018-13086.sol,"[RepairTarget] IADOWR:mintToken:146
+CODE: balanceOf[target] += mintedAmount
+OPERATION: balanceOf[target] [+=] mintedAmount
+SSA: REF_56 [+] mintedAmount_1 --> REF_56
+",,
+2018-13086.sol,"[RepairTarget] IADOWR:mintToken:147
+CODE: totalSupply += mintedAmount
+OPERATION: totalSupply [+=] mintedAmount
+SSA: totalSupply_3 [+] mintedAmount_1 --> totalSupply_4
+",,
+2018-13087.sol,"[RepairTarget] MyAdvancedToken:mintToken:198
+CODE: balanceOf[target] += mintedAmount
+OPERATION: balanceOf[target] [+=] mintedAmount
+SSA: REF_57 [+] mintedAmount_1 --> REF_57
+",,
+2018-13087.sol,"[RepairTarget] MyAdvancedToken:mintToken:199
+CODE: totalSupply += mintedAmount
+OPERATION: totalSupply [+=] mintedAmount
+SSA: totalSupply_7 [+] mintedAmount_1 --> totalSupply_8
+",,
+2018-13088.sol,"[RepairTarget] MyAdvancedToken:mintToken:213
+CODE: balanceOf[target] += mintedAmount
+OPERATION: balanceOf[target] [+=] mintedAmount
+SSA: REF_57 [+] mintedAmount_1 --> REF_57
+",,
+2018-13088.sol,"[RepairTarget] MyAdvancedToken:mintToken:214
+CODE: totalSupply += mintedAmount
+OPERATION: totalSupply [+=] mintedAmount
+SSA: totalSupply_7 [+] mintedAmount_1 --> totalSupply_8
+",,
+2018-13089.sol,"[RepairTarget] UCoinToken:mintToken:219
+CODE: balanceOf[target] += mintedAmount
+OPERATION: balanceOf[target] [+=] mintedAmount
+SSA: REF_57 [+] mintedAmount_1 --> REF_57
+",,
+2018-13089.sol,"[RepairTarget] UCoinToken:mintToken:220
+CODE: totalSupply += mintedAmount
+OPERATION: totalSupply [+=] mintedAmount
+SSA: totalSupply_7 [+] mintedAmount_1 --> totalSupply_8
+",,
+2018-13090.sol,"[RepairTarget] YiTongCoin:mintToken:213
+CODE: balanceOf[target] += mintedAmount
+OPERATION: balanceOf[target] [+=] mintedAmount
+SSA: REF_57 [+] mintedAmount_1 --> REF_57
+",,
+2018-13090.sol,"[RepairTarget] YiTongCoin:mintToken:214
+CODE: totalSupply += mintedAmount
+OPERATION: totalSupply [+=] mintedAmount
+SSA: totalSupply_7 [+] mintedAmount_1 --> totalSupply_8
+",,
+2018-13091.sol,"[RepairTarget] sumocoin:mintToken:78
+CODE: balanceOf[target] += mintedAmount
+OPERATION: balanceOf[target] [+=] mintedAmount
+SSA: REF_1 [+] mintedAmount_1 --> REF_1
+",,
+2018-13091.sol,"[RepairTarget] sumocoin:mintToken:79
+CODE: totalSupply += mintedAmount
+OPERATION: totalSupply [+=] mintedAmount
+SSA: totalSupply_3 [+] mintedAmount_1 --> totalSupply_4
+",,
+2018-13091.sol,"[RepairTarget] sumocoin:distributeToken:200
+CODE: i++
+OPERATION: [++] i
+SSA: i_2 [+] 1 --> i_3
+",1.0,1.0
+2018-13091.sol,"[RepairTarget] sumocoin:distributeToken:201
+CODE: balanceOf[owner] -= _value
+OPERATION: balanceOf[owner] [-=] _value
+SSA: REF_27 [-] _value_1 --> REF_27
+",,
+2018-13091.sol,"[RepairTarget] sumocoin:distributeToken:202
+CODE: balanceOf[addresses[i]] += _value
+OPERATION: balanceOf[addresses[i]] [+=] _value
+SSA: REF_29 [+] _value_1 --> REF_29
+",,
+2018-13092.sol,"[RepairTarget] AdvReimburseToken:mintToken:172
+CODE: balanceOf[target] += mintedAmount
+OPERATION: balanceOf[target] [+=] mintedAmount
+SSA: REF_47 [+] mintedAmount_1 --> REF_47
+",,
+2018-13092.sol,"[RepairTarget] AdvReimburseToken:mintToken:173
+CODE: totalSupply += mintedAmount
+OPERATION: totalSupply [+=] mintedAmount
+SSA: totalSupply_3 [+] mintedAmount_1 --> totalSupply_4
+",,
+2018-13113.sol,"[RepairTarget] StandardToken:transfer:49
+CODE: balances[msg.sender] -= _value
+OPERATION: balances[msg.sender] [-=] _value
+SSA: REF_1 [-] _value_1 --> REF_1
+",1.0,1.0
+2018-13113.sol,"[RepairTarget] StandardToken:transfer:50
+CODE: balances[_to] += _value
+OPERATION: balances[_to] [+=] _value
+SSA: REF_2 [+] _value_1 --> REF_2
+",,
+2018-13113.sol,"[RepairTarget] StandardToken:transferFrom:60
+CODE: balances[_to] += _value
+OPERATION: balances[_to] [+=] _value
+SSA: REF_6 [+] _value_1 --> REF_6
+",,
+2018-13113.sol,"[RepairTarget] StandardToken:transferFrom:61
+CODE: balances[_from] -= _value
+OPERATION: balances[_from] [-=] _value
+SSA: REF_7 [-] _value_1 --> REF_7
+",1.0,1.0
+2018-13113.sol,"[RepairTarget] StandardToken:transferFrom:62
+CODE: allowed[_from][msg.sender] -= _value
+OPERATION: allowed[_from][msg.sender] [-=] _value
+SSA: REF_9 [-] _value_1 --> REF_9
+",1.0,1.0
+2018-13126.sol,"[RepairTarget] SpendToken:mint:188
+CODE: require(totalSupply + _value <= TOKEN_LIMIT)
+OPERATION: totalSupply [+] _value
+SSA: totalSupply_1 [+] _value_1 --> TMP_70
+",,
+2018-13126.sol,"[RepairTarget] SpendToken:mint:190
+CODE: balances[_holder] += _value
+OPERATION: balances[_holder] [+=] _value
+SSA: REF_60 [+] _value_1 --> REF_60
+",,
+2018-13126.sol,"[RepairTarget] SpendToken:mint:191
+CODE: totalSupply += _value
+OPERATION: totalSupply [+=] _value
+SSA: totalSupply_1 [+] _value_1 --> totalSupply_2
+",,
+2018-13127.sol,"[RepairTarget] DSPXToken:mint:209
+CODE: require(totalSupply + value <= TOKEN_LIMIT)
+OPERATION: totalSupply [+] value
+SSA: totalSupply_1 [+] value_1 --> TMP_80
+",,
+2018-13127.sol,"[RepairTarget] DSPXToken:mint:211
+CODE: balances[holder] += value
+OPERATION: balances[holder] [+=] value
+SSA: REF_92 [+] value_1 --> REF_92
+",,
+2018-13127.sol,"[RepairTarget] DSPXToken:mint:212
+CODE: totalSupply += value
+OPERATION: totalSupply [+=] value
+SSA: totalSupply_1 [+] value_1 --> totalSupply_2
+",,
+2018-13128.sol,"[RepairTarget] ETY:mint:162
+CODE: require(totalSupply + _value <= TOKEN_LIMIT)
+OPERATION: totalSupply [+] _value
+SSA: totalSupply_3 [+] _value_1 --> TMP_91
+",,
+2018-13128.sol,"[RepairTarget] ETY:mint:164
+CODE: balances[_holder] += _value
+OPERATION: balances[_holder] [+=] _value
+SSA: REF_91 [+] _value_1 --> REF_91
+",,
+2018-13128.sol,"[RepairTarget] ETY:mint:165
+CODE: totalSupply += _value
+OPERATION: totalSupply [+=] _value
+SSA: totalSupply_3 [+] _value_1 --> totalSupply_4
+",,
+2018-13129.sol,"[RepairTarget] SPXToken:mint:220
+CODE: require(totalSupply + value <= TOKEN_LIMIT)
+OPERATION: totalSupply [+] value
+SSA: totalSupply_1 [+] value_1 --> TMP_76
+",,
+2018-13129.sol,"[RepairTarget] SPXToken:mint:222
+CODE: balances[holder] += value
+OPERATION: balances[holder] [+=] value
+SSA: REF_92 [+] value_1 --> REF_92
+",,
+2018-13129.sol,"[RepairTarget] SPXToken:mint:223
+CODE: totalSupply += value
+OPERATION: totalSupply [+=] value
+SSA: totalSupply_1 [+] value_1 --> totalSupply_2
+",,
+2018-13131.sol,"[RepairTarget] DSPXToken:mint:209
+CODE: require(totalSupply + value <= TOKEN_LIMIT)
+OPERATION: totalSupply [+] value
+SSA: totalSupply_1 [+] value_1 --> TMP_80
+",,
+2018-13131.sol,"[RepairTarget] DSPXToken:mint:211
+CODE: balances[holder] += value
+OPERATION: balances[holder] [+=] value
+SSA: REF_92 [+] value_1 --> REF_92
+",,
+2018-13131.sol,"[RepairTarget] DSPXToken:mint:212
+CODE: totalSupply += value
+OPERATION: totalSupply [+=] value
+SSA: totalSupply_1 [+] value_1 --> totalSupply_2
+",,
+2018-13132.sol,"[RepairTarget] SPXToken:mint:220
+CODE: require(totalSupply + value <= TOKEN_LIMIT)
+OPERATION: totalSupply [+] value
+SSA: totalSupply_1 [+] value_1 --> TMP_76
+",,
+2018-13132.sol,"[RepairTarget] SPXToken:mint:222
+CODE: balances[holder] += value
+OPERATION: balances[holder] [+=] value
+SSA: REF_92 [+] value_1 --> REF_92
+",,
+2018-13132.sol,"[RepairTarget] SPXToken:mint:223
+CODE: totalSupply += value
+OPERATION: totalSupply [+=] value
+SSA: totalSupply_1 [+] value_1 --> totalSupply_2
+",,
+2018-13144.sol,"[RepairTarget] StandardToken:transfer:37
+CODE: balances[msg.sender] -= _value
+OPERATION: balances[msg.sender] [-=] _value
+SSA: REF_1 [-] _value_1 --> REF_1
+",1.0,1.0
+2018-13144.sol,"[RepairTarget] StandardToken:transfer:38
+CODE: balances[_to] += _value
+OPERATION: balances[_to] [+=] _value
+SSA: REF_2 [+] _value_1 --> REF_2
+",,
+2018-13189.sol,"[RepairTarget] UNLB:mint:269
+CODE: balances[_x] += _v
+OPERATION: balances[_x] [+=] _v
+SSA: REF_79 [+] _v_1 --> REF_79
+",,
+2018-13189.sol,"[RepairTarget] UNLB:mint:270
+CODE: totalSupply += _v
+OPERATION: totalSupply [+=] _v
+SSA: totalSupply_2 [+] _v_1 --> totalSupply_3
+",,
+2018-13202.sol,"[RepairTarget] MyBoToken:mintToken:140
+CODE: balanceOf[target] += mintedAmount
+OPERATION: balanceOf[target] [+=] mintedAmount
+SSA: REF_52 [+] mintedAmount_1 --> REF_52
+",,
+2018-13202.sol,"[RepairTarget] MyBoToken:mintToken:141
+CODE: totalSupply += mintedAmount
+OPERATION: totalSupply [+=] mintedAmount
+SSA: totalSupply_3 [+] mintedAmount_1 --> totalSupply_4
+",,
+2018-13208.sol,"[RepairTarget] MoneyTreeToken:mintToken:137
+CODE: balanceOf[target] += mintedAmount
+OPERATION: balanceOf[target] [+=] mintedAmount
+SSA: REF_52 [+] mintedAmount_1 --> REF_52
+",,
+2018-13208.sol,"[RepairTarget] MoneyTreeToken:mintToken:138
+CODE: totalSupply += mintedAmount
+OPERATION: totalSupply [+=] mintedAmount
+SSA: totalSupply_3 [+] mintedAmount_1 --> totalSupply_4
+",,
+2018-13220.sol,"[RepairTarget] MAVCash:mintToken:137
+CODE: balanceOf[target] += mintedAmount
+OPERATION: balanceOf[target] [+=] mintedAmount
+SSA: REF_52 [+] mintedAmount_1 --> REF_52
+",,
+2018-13220.sol,"[RepairTarget] MAVCash:mintToken:138
+CODE: totalSupply += mintedAmount
+OPERATION: totalSupply [+=] mintedAmount
+SSA: totalSupply_3 [+] mintedAmount_1 --> totalSupply_4
+",,
+2018-13221.sol,"[RepairTarget] ExtremeToken:mintToken:180
+CODE: lances[target] += mintedAmount;
+
+OPERATION: lances[target] + [+=] ntedAmount;
+
+SSA: REF_96 [+] mintedAmount_1 --> REF_96
+",,
+2018-13221.sol,"[RepairTarget] ExtremeToken:mintToken:181
+CODE: talSupply += mintedAmount;
+
+OPERATION: talSupply + [+=] ntedAmount;
+
+SSA: totalSupply_3 [+] mintedAmount_1 --> totalSupply_4
+",,
+2018-13225.sol,"[RepairTarget] token:transfer:53
+CODE: assert (balanceOf[_to] + _value >= balanceOf[_to])
+OPERATION: balanceOf[_to] [+] _value
+SSA: REF_2 [+] _value_1 --> TMP_5
+",1.0,1.0
+2018-13225.sol,"[RepairTarget] token:transfer:54
+CODE: balanceOf[msg.sender] -= _value
+OPERATION: balanceOf[msg.sender] [-=] _value
+SSA: REF_4 [-] _value_1 --> REF_4
+",1.0,1.0
+2018-13225.sol,"[RepairTarget] token:transfer:55
+CODE: balanceOf[_to] += _value
+OPERATION: balanceOf[_to] [+=] _value
+SSA: REF_5 [+] _value_1 --> REF_5
+",1.0,1.0
+2018-13225.sol,"[RepairTarget] MyYLCToken:transfer:118
+CODE: assert (balanceOf[_to] + _value >= balanceOf[_to])
+OPERATION: balanceOf[_to] [+] _value
+SSA: REF_37 [+] _value_1 --> TMP_43
+",1.0,1.0
+2018-13225.sol,"[RepairTarget] MyYLCToken:transfer:120
+CODE: balanceOf[msg.sender] -= _value
+OPERATION: balanceOf[msg.sender] [-=] _value
+SSA: REF_40 [-] _value_1 --> REF_40
+",1.0,1.0
+2018-13225.sol,"[RepairTarget] MyYLCToken:transfer:121
+CODE: balanceOf[_to] += _value
+OPERATION: balanceOf[_to] [+=] _value
+SSA: REF_41 [+] _value_1 --> REF_41
+",1.0,1.0
+2018-13225.sol,"[RepairTarget] MyYLCToken:mintToken:140
+CODE: balanceOf[target] += mintedAmount
+OPERATION: balanceOf[target] [+=] mintedAmount
+SSA: REF_52 [+] mintedAmount_1 --> REF_52
+",,
+2018-13225.sol,"[RepairTarget] MyYLCToken:mintToken:141
+CODE: totalSupply += mintedAmount
+OPERATION: totalSupply [+=] mintedAmount
+SSA: totalSupply_3 [+] mintedAmount_1 --> totalSupply_4
+",,
+2018-13225.sol,"[RepairTarget] MyYLCToken:burn:175
+CODE: balanceOf[msg.sender] -= amount
+OPERATION: balanceOf[msg.sender] [-=] amount
+SSA: REF_62 [-] amount_1 --> REF_62
+",1.0,1.0
+2018-13225.sol,"[RepairTarget] MyYLCToken:burn:176
+CODE: totalSupply -= amount
+OPERATION: totalSupply [-=] amount
+SSA: totalSupply_6 [-] amount_1 --> totalSupply_7
+",,
+2018-13227.sol,"[RepairTarget] MoneyChainNetToken:mintToken:138
+CODE: balanceOf[target] += mintedAmount
+OPERATION: balanceOf[target] [+=] mintedAmount
+SSA: REF_52 [+] mintedAmount_1 --> REF_52
+",,
+2018-13227.sol,"[RepairTarget] MoneyChainNetToken:mintToken:139
+CODE: totalSupply += mintedAmount
+OPERATION: totalSupply [+=] mintedAmount
+SSA: totalSupply_3 [+] mintedAmount_1 --> totalSupply_4
+",,
+2018-13228.sol,"[RepairTarget] Crowdnext:mintToken:137
+CODE: balanceOf[target] += mintedAmount
+OPERATION: balanceOf[target] [+=] mintedAmount
+SSA: REF_52 [+] mintedAmount_1 --> REF_52
+",,
+2018-13228.sol,"[RepairTarget] Crowdnext:mintToken:138
+CODE: totalSupply += mintedAmount
+OPERATION: totalSupply [+=] mintedAmount
+SSA: totalSupply_3 [+] mintedAmount_1 --> totalSupply_4
+",,
+2018-13230.sol,"[RepairTarget] DestiNeedToken:mintToken:137
+CODE: balanceOf[target] += mintedAmount
+OPERATION: balanceOf[target] [+=] mintedAmount
+SSA: REF_52 [+] mintedAmount_1 --> REF_52
+",,
+2018-13230.sol,"[RepairTarget] DestiNeedToken:mintToken:138
+CODE: totalSupply += mintedAmount
+OPERATION: totalSupply [+=] mintedAmount
+SSA: totalSupply_3 [+] mintedAmount_1 --> totalSupply_4
+",,
+2018-13325.sol,"[RepairTarget] GrowToken:transferEth:134
+CODE: msg.sender.transfer(amount*10**uint256(18))
+OPERATION: amount [*] 10**uint256(18)
+SSA: amount_1 [*] TMP_42 --> TMP_43
+",,
+2018-13326.sol,"[RepairTarget] StandardToken:transfer:49
+CODE: balances[msg.sender] -= _value
+OPERATION: balances[msg.sender] [-=] _value
+SSA: REF_1 [-] _value_1 --> REF_1
+",1.0,1.0
+2018-13326.sol,"[RepairTarget] StandardToken:transfer:50
+CODE: balances[_to] += _value
+OPERATION: balances[_to] [+=] _value
+SSA: REF_2 [+] _value_1 --> REF_2
+",,
+2018-13326.sol,"[RepairTarget] StandardToken:transferFrom:60
+CODE: balances[_to] += _value
+OPERATION: balances[_to] [+=] _value
+SSA: REF_6 [+] _value_1 --> REF_6
+",,
+2018-13326.sol,"[RepairTarget] StandardToken:transferFrom:61
+CODE: balances[_from] -= _value
+OPERATION: balances[_from] [-=] _value
+SSA: REF_7 [-] _value_1 --> REF_7
+",1.0,1.0
+2018-13326.sol,"[RepairTarget] StandardToken:transferFrom:62
+CODE: allowed[_from][msg.sender] -= _value
+OPERATION: allowed[_from][msg.sender] [-=] _value
+SSA: REF_9 [-] _value_1 --> REF_9
+",1.0,1.0
+2018-13327.sol,"[RepairTarget] StandardToken:transfer:26
+CODE: balances[msg.sender] -= _value
+OPERATION: balances[msg.sender] [-=] _value
+SSA: REF_1 [-] _value_1 --> REF_1
+",1.0,1.0
+2018-13327.sol,"[RepairTarget] StandardToken:transfer:27
+CODE: balances[_to] += _value
+OPERATION: balances[_to] [+=] _value
+SSA: REF_2 [+] _value_1 --> REF_2
+",,
+2018-13327.sol,"[RepairTarget] StandardToken:transferFrom:35
+CODE: balances[_to] += _value
+OPERATION: balances[_to] [+=] _value
+SSA: REF_6 [+] _value_1 --> REF_6
+",,
+2018-13327.sol,"[RepairTarget] StandardToken:transferFrom:36
+CODE: balances[_from] -= _value
+OPERATION: balances[_from] [-=] _value
+SSA: REF_7 [-] _value_1 --> REF_7
+",1.0,1.0
+2018-13327.sol,"[RepairTarget] StandardToken:transferFrom:37
+CODE: allowed[_from][msg.sender] -= _value
+OPERATION: allowed[_from][msg.sender] [-=] _value
+SSA: REF_9 [-] _value_1 --> REF_9
+",1.0,1.0
+2018-13493.sol,"[RepairTarget] TokenERC20:burn:188
+CODE: _value = _value * (10**18)
+OPERATION: _value [*] (10**18)
+SSA: _value_1 [*] TMP_37 --> TMP_38
+",,
+2018-13493.sol,"[RepairTarget] TokenERC20:burn:190
+CODE: balanceOf[msg.sender] -= _value
+OPERATION: balanceOf[msg.sender] [-=] _value
+SSA: REF_18 [-] _value_2 --> REF_18
+",1.0,1.0
+2018-13493.sol,"[RepairTarget] TokenERC20:burn:191
+CODE: totalSupply -= _value
+OPERATION: totalSupply [-=] _value
+SSA: totalSupply_2 [-] _value_2 --> totalSupply_3
+",,
+2018-13493.sol,"[RepairTarget] DaddyToken:distributeToken:246
+CODE: _value = _value * 10**18
+OPERATION: _value [*] 10**18
+SSA: _value_1 [*] TMP_80 --> TMP_81
+",,
+2018-13493.sol,"[RepairTarget] DaddyToken:distributeToken:247
+CODE: i++
+OPERATION: [++] i
+SSA: i_2 [+] 1 --> i_3
+",1.0,1.0
+2018-13493.sol,"[RepairTarget] DaddyToken:distributeToken:249
+CODE: balanceOf[owner] -= _value
+OPERATION: balanceOf[owner] [-=] _value
+SSA: REF_51 [-] _value_2 --> REF_51
+",,
+2018-13493.sol,"[RepairTarget] DaddyToken:distributeToken:250
+CODE: balanceOf[addresses[i]] += _value
+OPERATION: balanceOf[addresses[i]] [+=] _value
+SSA: REF_53 [+] _value_2 --> REF_53
+",,
+2018-13493.sol,"[RepairTarget] DaddyToken:mintToken:279
+CODE: mintedAmount = mintedAmount * 10**18
+OPERATION: mintedAmount [*] 10**18
+SSA: mintedAmount_1 [*] TMP_104 --> TMP_105
+",,
+2018-13493.sol,"[RepairTarget] DaddyToken:mintToken:280
+CODE: balanceOf[target] += mintedAmount
+OPERATION: balanceOf[target] [+=] mintedAmount
+SSA: REF_62 [+] mintedAmount_2 --> REF_62
+",,
+2018-13493.sol,"[RepairTarget] DaddyToken:mintToken:281
+CODE: totalSupply += mintedAmount
+OPERATION: totalSupply [+=] mintedAmount
+SSA: totalSupply_7 [+] mintedAmount_2 --> totalSupply_8
+",,
+2018-13533.sol,"[RepairTarget] ALUXToken:mintToken:132
+CODE: balanceOf[owner] += mintedAmount
+OPERATION: balanceOf[owner] [+=] mintedAmount
+SSA: REF_45 [+] mintedAmount_1 --> REF_45
+",,
+2018-13533.sol,"[RepairTarget] ALUXToken:mintToken:133
+CODE: totalSupply += mintedAmount
+OPERATION: totalSupply [+=] mintedAmount
+SSA: totalSupply_3 [+] mintedAmount_1 --> totalSupply_4
+",,
+2018-13625.sol,"[RepairTarget] Krown:notifyAuthority:195
+CODE: balanceOf[msg.sender] -= notificationFee
+OPERATION: balanceOf[msg.sender] [-=] notificationFee
+SSA: REF_65 [-] notificationFee_1 --> REF_65
+",1.0,1.0
+2018-13625.sol,"[RepairTarget] Krown:notifyAuthority:196
+CODE: balanceOf[centralAuthority] += notificationFee
+OPERATION: balanceOf[centralAuthority] [+=] notificationFee
+SSA: REF_66 [+] notificationFee_1 --> REF_66
+",,
+2018-13625.sol,"[RepairTarget] Krown:mintlvlToken:231
+CODE: balanceOf[target] += mintedAmount
+OPERATION: balanceOf[target] [+=] mintedAmount
+SSA: REF_79 [+] mintedAmount_1 --> REF_79
+",,
+2018-13625.sol,"[RepairTarget] Krown:mintlvlToken:232
+CODE: totalSupply += mintedAmount
+OPERATION: totalSupply [+=] mintedAmount
+SSA: totalSupply_2 [+] mintedAmount_1 --> totalSupply_3
+",,
+2018-13625.sol,"[RepairTarget] Krown:burnlvlToken:240
+CODE: balanceOf[_from] -= _value
+OPERATION: balanceOf[_from] [-=] _value
+SSA: REF_81 [-] _value_1 --> REF_81
+",1.0,1.0
+2018-13625.sol,"[RepairTarget] Krown:burnlvlToken:241
+CODE: totalSupply -= _value
+OPERATION: totalSupply [-=] _value
+SSA: totalSupply_5 [-] _value_1 --> totalSupply_6
+",,
+2018-13670.sol,"[RepairTarget] GFCB:setMinBalance:44
+CODE: minBalanceForAccounts = minimumBalanceInFinney * 1 finney
+OPERATION: minimumBalanceInFinney [*] 1 finney
+SSA: minimumBalanceInFinney_1 [*] 1000000000000000 --> TMP_4
+",,
+2018-13670.sol,"[RepairTarget] GFCB:mintToken:67
+CODE: balanceOf[target] += mintedAmount
+OPERATION: balanceOf[target] [+=] mintedAmount
+SSA: REF_11 [+] mintedAmount_1 --> REF_11
+",,
+2018-13670.sol,"[RepairTarget] GFCB:mintToken:68
+CODE: totalSupply += mintedAmount
+OPERATION: totalSupply [+=] mintedAmount
+SSA: totalSupply_3 [+] mintedAmount_1 --> totalSupply_4
+",,
+2018-13698.sol,"[RepairTarget] Play2LivePromo:mintTokens:57
+CODE: balances[_investor] +=  promoValue
+OPERATION: balances[_investor] [+=] promoValue
+SSA: REF_1 [+] promoValue_3 --> REF_1
+",,
+2018-13698.sol,"[RepairTarget] Play2LivePromo:mintTokens:58
+CODE: totalSupply += promoValue
+OPERATION: totalSupply [+=] promoValue
+SSA: totalSupply_2 [+] promoValue_3 --> totalSupply_3
+",,
+2018-13698.sol,"[RepairTarget] Play2LivePromo:transfer:74
+CODE: balances[msg.sender] -= _amount
+OPERATION: balances[msg.sender] [-=] _amount
+SSA: REF_2 [-] _amount_1 --> REF_2
+",,
+2018-13698.sol,"[RepairTarget] Play2LivePromo:transfer:75
+CODE: balances[_to] -= _amount
+OPERATION: balances[_to] [-=] _amount
+SSA: REF_3 [-] _amount_1 --> REF_3
+",,
+2018-13698.sol,"[RepairTarget] Play2LivePromo:transferFrom:91
+CODE: balances[_from] -= _amount
+OPERATION: balances[_from] [-=] _amount
+SSA: REF_4 [-] _amount_1 --> REF_4
+",,
+2018-13698.sol,"[RepairTarget] Play2LivePromo:transferFrom:92
+CODE: allowed[_from][msg.sender] -= _amount
+OPERATION: allowed[_from][msg.sender] [-=] _amount
+SSA: REF_6 [-] _amount_1 --> REF_6
+",,
+2018-13698.sol,"[RepairTarget] Play2LivePromo:transferFrom:93
+CODE: balances[_to] -= _amount
+OPERATION: balances[_to] [-=] _amount
+SSA: REF_7 [-] _amount_1 --> REF_7
+",,
+2018-13703.sol,"[RepairTarget] CERB_Coin:sellOffline:65
+CODE: uint finalTokens =  (token_amount  * (10 ** 18))
+OPERATION: token_amount [*] (10 ** 18)
+SSA: token_amount_1 [*] TMP_1 --> TMP_2
+",,
+2018-13703.sol,"[RepairTarget] CERB_Coin:sellOffline:68
+CODE: remaining = remaining - finalTokens
+OPERATION: remaining [-] finalTokens
+SSA: remaining_3 [-] finalTokens_1 --> TMP_4
+",1.0,1.0
+2018-13703.sol,"[RepairTarget] CERB_Coin:mintToken:151
+CODE: var totalTokenToMint = tokensToMint * (10 ** 18)
+OPERATION: tokensToMint [*] (10 ** 18)
+SSA: tokensToMint_1 [*] TMP_31 --> TMP_32
+",,
+2018-13703.sol,"[RepairTarget] CERB_Coin:mintToken:152
+CODE: balanceOf[owner] += totalTokenToMint
+OPERATION: balanceOf[owner] [+=] totalTokenToMint
+SSA: REF_5 [+] totalTokenToMint_1 --> REF_5
+",,
+2018-13703.sol,"[RepairTarget] CERB_Coin:mintToken:153
+CODE: totalSupply += totalTokenToMint
+OPERATION: totalSupply [+=] totalTokenToMint
+SSA: totalSupply_3 [+] totalTokenToMint_1 --> totalSupply_4
+",,
+2018-13777.sol,"[RepairTarget] RRToken:mintToken:161
+CODE: balanceOf[target] += mintedAmount
+OPERATION: balanceOf[target] [+=] mintedAmount
+SSA: REF_39 [+] mintedAmount_1 --> REF_39
+",,
+2018-13777.sol,"[RepairTarget] RRToken:mintToken:162
+CODE: totalSupply += mintedAmount
+OPERATION: totalSupply [+=] mintedAmount
+SSA: totalSupply_3 [+] mintedAmount_1 --> totalSupply_4
+",,
+2018-13778.sol,"[RepairTarget] CGCToken:mintToken:209
+CODE: balanceOf[target] += mintedAmount
+OPERATION: balanceOf[target] [+=] mintedAmount
+SSA: REF_57 [+] mintedAmount_1 --> REF_57
+",,
+2018-13778.sol,"[RepairTarget] CGCToken:mintToken:210
+CODE: totalSupply += mintedAmount
+OPERATION: totalSupply [+=] mintedAmount
+SSA: totalSupply_7 [+] mintedAmount_1 --> totalSupply_8
+",,
+2018-13779.sol,"[RepairTarget] token:transfer:52
+CODE: assert (balanceOf[_to] + _value >= balanceOf[_to])
+OPERATION: balanceOf[_to] [+] _value
+SSA: REF_2 [+] _value_1 --> TMP_5
+",1.0,1.0
+2018-13779.sol,"[RepairTarget] token:transfer:53
+CODE: balanceOf[msg.sender] -= _value
+OPERATION: balanceOf[msg.sender] [-=] _value
+SSA: REF_4 [-] _value_1 --> REF_4
+",1.0,1.0
+2018-13779.sol,"[RepairTarget] token:transfer:54
+CODE: balanceOf[_to] += _value
+OPERATION: balanceOf[_to] [+=] _value
+SSA: REF_5 [+] _value_1 --> REF_5
+",1.0,1.0
+2018-13779.sol,"[RepairTarget] YLCToken:transfer:117
+CODE: assert (balanceOf[_to] + _value >= balanceOf[_to])
+OPERATION: balanceOf[_to] [+] _value
+SSA: REF_37 [+] _value_1 --> TMP_43
+",1.0,1.0
+2018-13779.sol,"[RepairTarget] YLCToken:transfer:119
+CODE: balanceOf[msg.sender] -= _value
+OPERATION: balanceOf[msg.sender] [-=] _value
+SSA: REF_40 [-] _value_1 --> REF_40
+",1.0,1.0
+2018-13779.sol,"[RepairTarget] YLCToken:transfer:120
+CODE: balanceOf[_to] += _value
+OPERATION: balanceOf[_to] [+=] _value
+SSA: REF_41 [+] _value_1 --> REF_41
+",1.0,1.0
+2018-13779.sol,"[RepairTarget] YLCToken:mintToken:139
+CODE: balanceOf[target] += mintedAmount
+OPERATION: balanceOf[target] [+=] mintedAmount
+SSA: REF_52 [+] mintedAmount_1 --> REF_52
+",,
+2018-13779.sol,"[RepairTarget] YLCToken:mintToken:140
+CODE: totalSupply += mintedAmount
+OPERATION: totalSupply [+=] mintedAmount
+SSA: totalSupply_3 [+] mintedAmount_1 --> totalSupply_4
+",,
+2018-13779.sol,"[RepairTarget] YLCToken:burn:174
+CODE: balanceOf[msg.sender] -= amount
+OPERATION: balanceOf[msg.sender] [-=] amount
+SSA: REF_62 [-] amount_1 --> REF_62
+",1.0,1.0
+2018-13779.sol,"[RepairTarget] YLCToken:burn:175
+CODE: totalSupply -= amount
+OPERATION: totalSupply [-=] amount
+SSA: totalSupply_6 [-] amount_1 --> totalSupply_7
+",,
+2018-13782.sol,"[RepairTarget] EnterCoin:mintToken:137
+CODE: balanceOf[target] += mintedAmount
+OPERATION: balanceOf[target] [+=] mintedAmount
+SSA: REF_52 [+] mintedAmount_1 --> REF_52
+",,
+2018-13782.sol,"[RepairTarget] EnterCoin:mintToken:138
+CODE: totalSupply += mintedAmount
+OPERATION: totalSupply [+=] mintedAmount
+SSA: totalSupply_3 [+] mintedAmount_1 --> totalSupply_4
+",,
+2018-13783.sol,"[RepairTarget] TokenERC20:TokenERC20:58
+CODE: totalSupply = initialSupply * 10 ** uint256(decimals)
+OPERATION: initialSupply [*] 10 ** uint256(decimals)
+SSA: initialSupply_1 [*] TMP_6 --> TMP_7
+",,
+2018-13783.sol,"[RepairTarget] JiucaiToken:mintToken:227
+CODE: balanceOf[target] += mintedAmount
+OPERATION: balanceOf[target] [+=] mintedAmount
+SSA: REF_57 [+] mintedAmount_1 --> REF_57
+",,
+2018-13783.sol,"[RepairTarget] JiucaiToken:mintToken:228
+CODE: totalSupply += mintedAmount
+OPERATION: totalSupply [+=] mintedAmount
+SSA: totalSupply_7 [+] mintedAmount_1 --> totalSupply_8
+",,
+2018-13836.sol,"[RepairTarget] RocketCoin:multiTransfer:71
+CODE: a++
+OPERATION: [++] a
+SSA: a_2 [+] 1 --> a_3
+",1.0,1.0
+2018-13836.sol,"[RepairTarget] RocketCoin:multiTransfer:72
+CODE: totalAmount += _amounts[a]
+OPERATION: totalAmount [+=] _amounts[a]
+SSA: totalAmount_1 [+] REF_16 --> totalAmount_2
+",,
+2018-13836.sol,"[RepairTarget] RocketCoin:multiTransfer:75
+CODE: balances[msg.sender] -= totalAmount
+OPERATION: balances[msg.sender] [-=] totalAmount
+SSA: REF_18 [-] totalAmount_1 --> REF_18
+",1.0,1.0
+2018-13836.sol,"[RepairTarget] RocketCoin:multiTransfer:76
+CODE: b++
+OPERATION: [++] b
+SSA: b_2 [+] 1 --> b_3
+",1.0,1.0
+2018-13836.sol,"[RepairTarget] RocketCoin:multiTransfer:78
+CODE: balances[_addresses[b]] += _amounts[b]
+OPERATION: balances[_addresses[b]] [+=] _amounts[b]
+SSA: REF_22 [+] REF_23 --> REF_22
+",,
+2018-13836.sol,"[RepairTarget] RocketCoin:transferFrom:87
+CODE: balances[_from] -= _amount
+OPERATION: balances[_from] [-=] _amount
+SSA: REF_29 [-] _amount_1 --> REF_29
+",1.0,1.0
+2018-13836.sol,"[RepairTarget] RocketCoin:transferFrom:88
+CODE: allowed[_from][msg.sender] -= _amount
+OPERATION: allowed[_from][msg.sender] [-=] _amount
+SSA: REF_31 [-] _amount_1 --> REF_31
+",1.0,1.0
+2018-13836.sol,"[RepairTarget] RocketCoin:transferFrom:89
+CODE: balances[_to] += _amount
+OPERATION: balances[_to] [+=] _amount
+SSA: REF_32 [+] _amount_1 --> REF_32
+",,
+2018-13836.sol,"[RepairTarget] RocketCoin:setupAirDrop:103
+CODE: airDropAmount = _amount * 10 ** decimals
+OPERATION: _amount [*] 10 ** decimals
+SSA: _amount_1 [*] TMP_39 --> TMP_40
+",,
+2018-13836.sol,"[RepairTarget] RocketCoin:setupAirDrop:104
+CODE: airDropGasPrice = _Gwei * 10 ** 9
+OPERATION: _Gwei [*] 10 ** 9
+SSA: _Gwei_1 [*] TMP_41 --> TMP_42
+",,
+2018-14001.sol,"[RepairTarget] ExtendetdToken:batchTransfer:41
+CODE: uint256 amount = cnt * _value
+OPERATION: cnt [*] _value
+SSA: cnt_1 [*] _value_1 --> TMP_26
+",,
+2018-14001.sol,"[RepairTarget] ExtendetdToken:batchTransfer:44
+CODE: balanceOf[msg.sender] -= amount
+OPERATION: balanceOf[msg.sender] [-=] amount
+SSA: REF_34 [-] amount_1 --> REF_34
+",1.0,1.0
+2018-14001.sol,"[RepairTarget] ExtendetdToken:batchTransfer:45
+CODE: i++
+OPERATION: [++] i
+SSA: i_2 [+] 1 --> i_3
+",1.0,1.0
+2018-14001.sol,"[RepairTarget] ExtendetdToken:batchTransfer:46
+CODE: balanceOf[_receivers[i]] += _value
+OPERATION: balanceOf[_receivers[i]] [+=] _value
+SSA: REF_36 [+] _value_1 --> REF_36
+",,
+2018-14002.sol,"[RepairTarget] MP3Coin:distribute:67
+CODE: a++
+OPERATION: [++] a
+SSA: a_2 [+] 1 --> a_3
+",1.0,1.0
+2018-14002.sol,"[RepairTarget] MP3Coin:distribute:68
+CODE: totalAmount += _amounts[a]
+OPERATION: totalAmount [+=] _amounts[a]
+SSA: totalAmount_1 [+] REF_20 --> totalAmount_2
+",,
+2018-14002.sol,"[RepairTarget] MP3Coin:distribute:73
+CODE: balances[msg.sender] -= totalAmount
+OPERATION: balances[msg.sender] [-=] totalAmount
+SSA: REF_22 [-] totalAmount_1 --> REF_22
+",1.0,1.0
+2018-14002.sol,"[RepairTarget] MP3Coin:distribute:75
+CODE: b++
+OPERATION: [++] b
+SSA: b_2 [+] 1 --> b_3
+",1.0,1.0
+2018-14002.sol,"[RepairTarget] MP3Coin:distribute:77
+CODE: balances[_addresses[b]] += _amounts[b]
+OPERATION: balances[_addresses[b]] [+=] _amounts[b]
+SSA: REF_26 [+] REF_27 --> REF_26
+",,
+2018-14003.sol,"[RepairTarget] WMCToken:batchTransfer:189
+CODE: uint256 amount = uint256(cnt) * _value
+OPERATION: uint256(cnt) [*] _value
+SSA: TMP_73 [*] _value_1 --> TMP_74
+",,
+2018-14003.sol,"[RepairTarget] WMCToken:batchTransfer:194
+CODE: balanceOf[msg.sender] -= amount
+OPERATION: balanceOf[msg.sender] [-=] amount
+SSA: REF_59 [-] amount_1 --> REF_59
+",1.0,1.0
+2018-14003.sol,"[RepairTarget] WMCToken:batchTransfer:195
+CODE: i++
+OPERATION: [++] i
+SSA: i_2 [+] 1 --> i_3
+",1.0,1.0
+2018-14003.sol,"[RepairTarget] WMCToken:batchTransfer:196
+CODE: balanceOf[_receivers[i]] += _value
+OPERATION: balanceOf[_receivers[i]] [+=] _value
+SSA: REF_61 [+] _value_1 --> REF_61
+",,
+2018-14004.sol,"[RepairTarget] Globecoin:distribute_100_tokens_to_many:226
+CODE: ++)
+OPERATION: [++] +
+SSA: i_2 [+] 1 --> i_3
+",1.0,1.0
+2018-14004.sol,"[RepairTarget] Globecoin:distribute_100_tokens_to_many:229
+CODE: alances[msg.sender] -= 100000;
+OPERATION: alances[msg.sender]  [-=] 00000;
+SSA: REF_107 [-] 100000 --> REF_107
+",,
+2018-14004.sol,"[RepairTarget] Globecoin:distribute_100_tokens_to_many:230
+CODE: alances[addresses[i]] += 100000;
+OPERATION: alances[addresses[i]]  [+=] 00000;
+SSA: REF_109 [+] 100000 --> REF_109
+",,
+2018-14005.sol,"[RepairTarget] MalaysianCoin:transferAUTOtokens10:215
+CODE: ++)
+OPERATION: [++] +
+SSA: i_2 [+] 1 --> i_3
+",1.0,1.0
+2018-14005.sol,"[RepairTarget] MalaysianCoin:transferAUTOtokens10:218
+CODE: alances[msg.sender] -= 10000;
+OPERATION: alances[msg.sender]  [-=] 0000;
+SSA: REF_100 [-] 10000 --> REF_100
+",,
+2018-14005.sol,"[RepairTarget] MalaysianCoin:transferAUTOtokens10:219
+CODE: alances[addresses[i]] += 10000;
+OPERATION: alances[addresses[i]]  [+=] 0000;
+SSA: REF_102 [+] 10000 --> REF_102
+",,
+2018-14005.sol,"[RepairTarget] MalaysianCoin:transferAUTOtokens5:226
+CODE: ++)
+OPERATION: [++] +
+SSA: i_2 [+] 1 --> i_3
+",1.0,1.0
+2018-14005.sol,"[RepairTarget] MalaysianCoin:transferAUTOtokens5:229
+CODE: alances[msg.sender] -= 5000;
+OPERATION: alances[msg.sender]  [-=] 000;
+SSA: REF_106 [-] 5000 --> REF_106
+",,
+2018-14005.sol,"[RepairTarget] MalaysianCoin:transferAUTOtokens5:230
+CODE: alances[addresses[i]] += 5000;
+OPERATION: alances[addresses[i]]  [+=] 000;
+SSA: REF_108 [+] 5000 --> REF_108
+",,
+2018-14005.sol,"[RepairTarget] MalaysianCoin:transferAUTOtoken1:238
+CODE: ++)
+OPERATION: [++] +
+SSA: i_2 [+] 1 --> i_3
+",1.0,1.0
+2018-14005.sol,"[RepairTarget] MalaysianCoin:transferAUTOtoken1:241
+CODE: alances[msg.sender] -= 1000;
+OPERATION: alances[msg.sender]  [-=] 000;
+SSA: REF_112 [-] 1000 --> REF_112
+",,
+2018-14005.sol,"[RepairTarget] MalaysianCoin:transferAUTOtoken1:242
+CODE: alances[addresses[i]] += 1000;
+OPERATION: alances[addresses[i]]  [+=] 000;
+SSA: REF_114 [+] 1000 --> REF_114
+",,
+2018-14006.sol,"[RepairTarget] NGToken:multipleTransfer:87
+CODE: require(_value * _to.length > 0)
+OPERATION: _value [*] _to.length
+SSA: _value_1 [*] REF_5 --> TMP_9
+",,
+2018-14006.sol,"[RepairTarget] NGToken:multipleTransfer:88
+CODE: require(balances[msg.sender] >= _value * _to.length)
+OPERATION: _value [*] _to.length
+SSA: _value_1 [*] REF_7 --> TMP_12
+",,
+2018-14006.sol,"[RepairTarget] NGToken:multipleTransfer:89
+CODE: balances[msg.sender] -= _value * _to.length
+OPERATION: _value [*] _to.length
+SSA: _value_1 [*] REF_9 --> TMP_15
+",,
+2018-14006.sol,"[RepairTarget] NGToken:multipleTransfer:89
+CODE: balances[msg.sender] -= _value * _to.length
+OPERATION: balances[msg.sender] [-=] _value * _to.length
+SSA: REF_8 [-] TMP_15 --> REF_8
+",,
+2018-14006.sol,"[RepairTarget] NGToken:multipleTransfer:90
+CODE: ++i
+OPERATION: [++] i
+SSA: i_2 [+] 1 --> i_3
+",1.0,1.0
+2018-14006.sol,"[RepairTarget] NGToken:multipleTransfer:91
+CODE: balances[_to[i]] += _value
+OPERATION: balances[_to[i]] [+=] _value
+SSA: REF_12 [+] _value_1 --> REF_12
+",,
+2018-14006.sol,"[RepairTarget] NGToken:batchTransfer:101
+CODE: ++i
+OPERATION: [++] i
+SSA: i_2 [+] 1 --> i_3
+",1.0,1.0
+2018-14006.sol,"[RepairTarget] NGToken:batchTransfer:105
+CODE: balances[msg.sender] -= value
+OPERATION: balances[msg.sender] [-=] value
+SSA: REF_22 [-] value_1 --> REF_22
+",1.0,1.0
+2018-14006.sol,"[RepairTarget] NGToken:batchTransfer:106
+CODE: balances[to] += value
+OPERATION: balances[to] [+=] value
+SSA: REF_23 [+] value_1 --> REF_23
+",,
+2018-14006.sol,"[RepairTarget] NGToken:increaseApproval:144
+CODE: allowed[msg.sender][_spender] += _addValue
+OPERATION: allowed[msg.sender][_spender] [+=] _addValue
+SSA: REF_37 [+] _addValue_1 --> REF_37
+",,
+2018-14084.sol,"[RepairTarget] MyAdvancedToken:mintToken:209
+CODE: balanceOf[target] += mintedAmount
+OPERATION: balanceOf[target] [+=] mintedAmount
+SSA: REF_57 [+] mintedAmount_1 --> REF_57
+",,
+2018-14084.sol,"[RepairTarget] MyAdvancedToken:mintToken:210
+CODE: totalSupply += mintedAmount
+OPERATION: totalSupply [+=] mintedAmount
+SSA: totalSupply_7 [+] mintedAmount_1 --> totalSupply_8
+",,
+2018-14086.sol,"[RepairTarget] MyToken:mintToken:68
+CODE:  mintedAmount;
+            totalS
+OPERATION:  mintedAmount;
+   [+=]       totalS
+SSA: REF_10 [+] mintedAmount_1 --> REF_10
+",,
+2018-14086.sol,"[RepairTarget] MyToken:setMinBalance:105
+CODE: s = minimumBalanceInFinney * 1 finney;
+        }
+}
+
+OPERATION: ey * 1 finney;
+        [*] }
+
+SSA: minimumBalanceInFinney_1 [*] 1000000000000000 --> TMP_32
+",,
+2018-14087.sol,"[RepairTarget] EncryptedToken:mintToken:136
+CODE: balanceOf[target] += mintedAmount
+OPERATION: balanceOf[target] [+=] mintedAmount
+SSA: REF_57 [+] mintedAmount_1 --> REF_57
+",,
+2018-14087.sol,"[RepairTarget] EncryptedToken:mintToken:137
+CODE: totalSupply += mintedAmount
+OPERATION: totalSupply [+=] mintedAmount
+SSA: totalSupply_7 [+] mintedAmount_1 --> totalSupply_8
+",,
+2018-14576.sol,"[RepairTarget] SunContractToken:mintTokens:154
+CODE: balances[_to] + _amount < balances[_to]
+OPERATION: balances[_to] [+] _amount
+SSA: REF_26 [+] _amount_1 --> TMP_21
+",1.0,1.0
+2018-14576.sol,"[RepairTarget] SunContractToken:mintTokens:155
+CODE: supply += _amount
+OPERATION: supply [+=] _amount
+SSA: supply_2 [+] _amount_1 --> supply_3
+",,
+2018-14576.sol,"[RepairTarget] SunContractToken:mintTokens:156
+CODE: balances[_to] += _amount
+OPERATION: balances[_to] [+=] _amount
+SSA: REF_28 [+] _amount_1 --> REF_28
+",1.0,1.0
+2018-17050.sol,"[RepairTarget] PolyAi:mintToken:132
+CODE: balanceOf[target] += mintedAmount
+OPERATION: balanceOf[target] [+=] mintedAmount
+SSA: REF_52 [+] mintedAmount_1 --> REF_52
+",,
+2018-18665.sol,"[RepairTarget] StandardToken:transferFrom:26
+CODE: balances[_to] += _value
+OPERATION: balances[_to] [+=] _value
+SSA: REF_6 [+] _value_1 --> REF_6
+",,
+2018-18665.sol,"[RepairTarget] StandardToken:transferFrom:27
+CODE: balances[_from] -= _value
+OPERATION: balances[_from] [-=] _value
+SSA: REF_7 [-] _value_1 --> REF_7
+",1.0,1.0
+2018-18665.sol,"[RepairTarget] StandardToken:transferFrom:28
+CODE: allowed[_from][msg.sender] -= _value
+OPERATION: allowed[_from][msg.sender] [-=] _value
+SSA: REF_9 [-] _value_1 --> REF_9
+",1.0,1.0
+2018-18665.sol,"[RepairTarget] NexxusToken:mintToken:70
+CODE: totalSupply += _amount
+OPERATION: totalSupply [+=] _amount
+SSA: totalSupply_2 [+] _amount_1 --> totalSupply_3
+",,
+2018-18665.sol,"[RepairTarget] NexxusToken:mintToken:71
+CODE: balances[owner] += _amount
+OPERATION: balances[owner] [+=] _amount
+SSA: REF_34 [+] _amount_1 --> REF_34
+",,
+2021-33403.sol,"[RepairTarget] BlocklancerToken:transfer:114
+CODE: senderBalance -= _value
+OPERATION: senderBalance [-=] _value
+SSA: senderBalance_1 [-] _value_1 --> senderBalance_2
+",1.0,1.0
+2021-33403.sol,"[RepairTarget] BlocklancerToken:transfer:118
+CODE: balances[_to] += _value
+OPERATION: balances[_to] [+=] _value
+SSA: REF_101 [+] _value_1 --> REF_101
+",,
+2021-33403.sol,"[RepairTarget] BlocklancerToken:addToken:225
+CODE: balances[invest]+=value
+OPERATION: balances[invest] [+=] value
+SSA: REF_110 [+] value_1 --> REF_110
+",,
+2021-33403.sol,"[RepairTarget] BlocklancerToken:addToken:226
+CODE: totalTokens+=value
+OPERATION: totalTokens [+=] value
+SSA: totalTokens_4 [+] value_1 --> totalTokens_5
+",,
+2021-33403.sol,"[RepairTarget] BlocklancerToken:finalize:300
+CODE: uint256 additionalTokens = totalTokens * percentOfTotal / (100 - percentOfTotal)
+OPERATION: 100 [-] percentOfTotal
+SSA: 100 [-] percentOfTotal_1 --> TMP_33
+",,
+2021-33403.sol,"[RepairTarget] BlocklancerToken:finalize:300
+CODE: uint256 additionalTokens = totalTokens * percentOfTotal / (100 - percentOfTotal)
+OPERATION: totalTokens [*] percentOfTotal
+SSA: totalTokens_9 [*] percentOfTotal_1 --> TMP_32
+",,
+2021-33403.sol,"[RepairTarget] BlocklancerToken:finalize:300
+CODE: uint256 additionalTokens = totalTokens * percentOfTotal / (100 - percentOfTotal)
+OPERATION: totalTokens * percentOfTotal [/] (100 - percentOfTotal)
+SSA: TMP_32 [/] TMP_33 --> TMP_34
+",,
+2021-33403.sol,"[RepairTarget] BlocklancerToken:finalize:301
+CODE: totalTokens += additionalTokens
+OPERATION: totalTokens [+=] additionalTokens
+SSA: totalTokens_9 [+] additionalTokens_1 --> totalTokens_10
+",,
+2021-33403.sol,"[RepairTarget] BlocklancerToken:finalize:302
+CODE: balances[master] += additionalTokens
+OPERATION: balances[master] [+=] additionalTokens
+SSA: REF_114 [+] additionalTokens_1 --> REF_114
+",,
+2021-34270.sol,"[RepairTarget] Doftcoin:mintToken:151
+CODE: balanceOf[_target] += _mintedAmount
+OPERATION: balanceOf[_target] [+=] _mintedAmount
+SSA: REF_29 [+] _mintedAmount_1 --> REF_29
+",,
+2021-34270.sol,"[RepairTarget] Doftcoin:mintToken:152
+CODE: _totalSupply += _mintedAmount
+OPERATION: _totalSupply [+=] _mintedAmount
+SSA: _totalSupply_4 [+] _mintedAmount_1 --> _totalSupply_5
+",,
+BECToken.sol,"[RepairTarget] PausableToken:batchTransfer:258
+CODE: uint256 amount = uint256(cnt) * _value
+OPERATION: uint256(cnt) [*] _value
+SSA: TMP_111 [*] _value_1 --> TMP_112
+",,
+BECToken.sol,"[RepairTarget] PausableToken:batchTransfer:263
+CODE: i++
+OPERATION: [++] i
+SSA: i_2 [+] 1 --> i_3
+",1.0,1.0
+insecure_transfer.sol,"[RepairTarget] IntegerOverflowAdd:transfer:16
+CODE: balanceOf[msg.sender] -= _value
+OPERATION: balanceOf[msg.sender] [-=] _value
+SSA: REF_1 [-] _value_1 --> REF_1
+",1.0,1.0
+insecure_transfer.sol,"[RepairTarget] IntegerOverflowAdd:transfer:18
+CODE: balanceOf[_to] += _value
+OPERATION: balanceOf[_to] [+=] _value
+SSA: REF_2 [+] _value_1 --> REF_2
+",,
+integer_overflow_add.sol,"[RepairTarget] IntegerOverflowAdd:run:17
+CODE: count += input
+OPERATION: count [+=] input
+SSA: count_1 [+] input_1 --> count_2
+",,
+integer_overflow_mapping_sym_1.sol,"[RepairTarget] IntegerOverflowMappingSym1:init:10
+CODE: map[k] -= v
+OPERATION: map[k] [-=] v
+SSA: REF_0 [-] v_1 --> REF_0
+",,
+integer_overflow_minimal.sol,"[RepairTarget] IntegerOverflowMinimal:run:11
+CODE: count -= input
+OPERATION: count [-=] input
+SSA: count_1 [-] input_1 --> count_2
+",,
+integer_overflow_mul.sol,"[RepairTarget] IntegerOverflowMul:run:11
+CODE: count *= input
+OPERATION: count [*=] input
+SSA: count_1 [*] input_1 --> count_2
+",,
+integer_overflow_multitx_onefunc_feasible.sol,"[RepairTarget] IntegerOverflowMultiTxOneFuncFeasible:run:22
+CODE: count -= input
+OPERATION: count [-=] input
+SSA: count_1 [-] input_1 --> count_2
+",,
+overflow_simple_add.sol,"[RepairTarget] Overflow_Add:add:8
+CODE: balance += deposit
+OPERATION: balance [+=] deposit
+SSA: balance_1 [+] deposit_1 --> balance_2
+",,
+overflow_single_tx.sol,"[RepairTarget] IntegerOverflowSingleTransaction:overflowmultostate:24
+CODE: count *= input
+OPERATION: count [*=] input
+SSA: count_3 [*] input_1 --> count_4
+",,
+overflow_single_tx.sol,"[RepairTarget] IntegerOverflowSingleTransaction:underflowtostate:30
+CODE: count -= input
+OPERATION: count [-=] input
+SSA: count_5 [-] input_1 --> count_6
+",,
+overflow_single_tx.sol,"[RepairTarget] IntegerOverflowSingleTransaction:overflowmulocalonly:42
+CODE: uint res = count * input
+OPERATION: count [*] input
+SSA: count_8 [*] input_1 --> TMP_1
+",,
+timelock.sol,"[RepairTarget] TimeLock:increaseLockTime:22
+CODE: lockTime[msg.sender] += _secondsToIncrease
+OPERATION: lockTime[msg.sender] [+=] _secondsToIncrease
+SSA: REF_2 [+] _secondsToIncrease_1 --> REF_2
+",,
+token.sol,"[RepairTarget] Token:transfer:20
+CODE: require(balances[msg.sender] - _value >= 0)
+OPERATION: balances[msg.sender] [-] _value
+SSA: REF_1 [-] _value_1 --> TMP_0
+",,
+token.sol,"[RepairTarget] Token:transfer:22
+CODE: balances[msg.sender] -= _value
+OPERATION: balances[msg.sender] [-=] _value
+SSA: REF_2 [-] _value_1 --> REF_2
+",,
+token.sol,"[RepairTarget] Token:transfer:23
+CODE: balances[_to] += _value
+OPERATION: balances[_to] [+=] _value
+SSA: REF_3 [+] _value_1 --> REF_3
+",,
+tokensalechallenge.sol,"[RepairTarget] TokenSaleChallenge:buy:22
+CODE: require(msg.value == numTokens * PRICE_PER_TOKEN)
+OPERATION: numTokens [*] PRICE_PER_TOKEN
+SSA: numTokens_1 [*] PRICE_PER_TOKEN_1 --> TMP_5
+",,
+tokensalechallenge.sol,"[RepairTarget] TokenSaleChallenge:buy:24
+CODE: balanceOf[msg.sender] += numTokens
+OPERATION: balanceOf[msg.sender] [+=] numTokens
+SSA: REF_0 [+] numTokens_1 --> REF_0
+",,
+tokensalechallenge.sol,"[RepairTarget] TokenSaleChallenge:sell:30
+CODE: balanceOf[msg.sender] -= numTokens
+OPERATION: balanceOf[msg.sender] [-=] numTokens
+SSA: REF_2 [-] numTokens_1 --> REF_2
+",1.0,1.0
+tokensalechallenge.sol,"[RepairTarget] TokenSaleChallenge:sell:31
+CODE: msg.sender.transfer(numTokens * PRICE_PER_TOKEN)
+OPERATION: numTokens [*] PRICE_PER_TOKEN
+SSA: numTokens_1 [*] PRICE_PER_TOKEN_2 --> TMP_10
+",,

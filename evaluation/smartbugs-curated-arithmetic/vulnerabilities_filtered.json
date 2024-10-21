@@ -1,0 +1,207 @@
+[
+    {
+        "name": "BECToken.sol",
+        "pragma": "0.4.16",
+        "tp": [
+            264
+        ],
+        "fp": [
+            15,
+            16,
+            22,
+            29,
+            33,
+            269,
+            298
+        ],
+        "tp_number": 1,
+        "tp_filtered_number": 0,
+        "fp_number": 7,
+        "fp_filtered_number": 4
+    },
+    {
+        "name": "insecure_transfer.sol",
+        "pragma": "0.4.10",
+        "tp": [
+            18
+        ],
+        "fp": [
+            16
+        ],
+        "tp_number": 1,
+        "tp_filtered_number": 0,
+        "fp_number": 1,
+        "fp_filtered_number": 1
+    },
+    {
+        "name": "integer_overflow_1.sol",
+        "pragma": "0.4.15",
+        "tp": [
+            14
+        ],
+        "fp": [],
+        "tp_number": 1,
+        "tp_filtered_number": 0,
+        "fp_number": 0,
+        "fp_filtered_number": 0
+    },
+    {
+        "name": "integer_overflow_add.sol",
+        "pragma": "0.4.19",
+        "tp": [
+            17
+        ],
+        "fp": [],
+        "tp_number": 1,
+        "tp_filtered_number": 0,
+        "fp_number": 0,
+        "fp_filtered_number": 0
+    },
+    {
+        "name": "integer_overflow_benign_1.sol",
+        "pragma": "0.4.19",
+        "tp": [
+            17
+        ],
+        "fp": [],
+        "tp_number": 1,
+        "tp_filtered_number": 0,
+        "fp_number": 0,
+        "fp_filtered_number": 0
+    },
+    {
+        "name": "integer_overflow_mapping_sym_1.sol",
+        "pragma": "0.4.11",
+        "tp": [
+            16
+        ],
+        "fp": [],
+        "tp_number": 1,
+        "tp_filtered_number": 0,
+        "fp_number": 0,
+        "fp_filtered_number": 0
+    },
+    {
+        "name": "integer_overflow_minimal.sol",
+        "pragma": "0.4.19",
+        "tp": [
+            17
+        ],
+        "fp": [],
+        "tp_number": 1,
+        "tp_filtered_number": 0,
+        "fp_number": 0,
+        "fp_filtered_number": 0
+    },
+    {
+        "name": "integer_overflow_mul.sol",
+        "pragma": "0.4.19",
+        "tp": [
+            17
+        ],
+        "fp": [],
+        "tp_number": 1,
+        "tp_filtered_number": 0,
+        "fp_number": 0,
+        "fp_filtered_number": 0
+    },
+    {
+        "name": "integer_overflow_multitx_multifunc_feasible.sol",
+        "pragma": "0.4.23",
+        "tp": [
+            25
+        ],
+        "fp": [],
+        "tp_number": 1,
+        "tp_filtered_number": 0,
+        "fp_number": 0,
+        "fp_filtered_number": 0
+    },
+    {
+        "name": "integer_overflow_multitx_onefunc_feasible.sol",
+        "pragma": "0.4.23",
+        "tp": [
+            22
+        ],
+        "fp": [],
+        "tp_number": 1,
+        "tp_filtered_number": 0,
+        "fp_number": 0,
+        "fp_filtered_number": 0
+    },
+    {
+        "name": "overflow_simple_add.sol",
+        "pragma": "0.4.25",
+        "tp": [
+            14
+        ],
+        "fp": [],
+        "tp_number": 1,
+        "tp_filtered_number": 0,
+        "fp_number": 0,
+        "fp_filtered_number": 0
+    },
+    {
+        "name": "overflow_single_tx.sol",
+        "pragma": "0.4.23",
+        "tp": [
+            18,
+            24,
+            30,
+            36,
+            42,
+            48
+        ],
+        "fp": [],
+        "tp_number": 6,
+        "tp_filtered_number": 0,
+        "fp_number": 0,
+        "fp_filtered_number": 0
+    },
+    {
+        "name": "timelock.sol",
+        "pragma": "0.4.10",
+        "tp": [
+            22
+        ],
+        "fp": [
+            16,
+            17
+        ],
+        "tp_number": 1,
+        "tp_filtered_number": 0,
+        "fp_number": 2,
+        "fp_filtered_number": 1
+    },
+    {
+        "name": "token.sol",
+        "pragma": "0.4.18",
+        "tp": [
+            20,
+            22
+        ],
+        "fp": [
+            23
+        ],
+        "tp_number": 2,
+        "tp_filtered_number": 0,
+        "fp_number": 1,
+        "fp_filtered_number": 0
+    },
+    {
+        "name": "tokensalechallenge.sol",
+        "pragma": "0.4.21",
+        "tp": [
+            23,
+            25,
+            33
+        ],
+        "fp": [
+            31
+        ],
+        "tp_number": 3,
+        "tp_filtered_number": 0,
+        "fp_number": 1,
+        "fp_filtered_number": 1
+    }
+]

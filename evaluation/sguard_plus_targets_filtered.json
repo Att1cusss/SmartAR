@@ -1,0 +1,438 @@
+{
+    "2018-10299.sol:PausableToken": {
+        "targets": 2,
+        "filtered": 1
+    },
+    "2018-10468.sol:UselessEthereumToken": {
+        "targets": 15,
+        "filtered": 3
+    },
+    "2018-10706.sol:Token": {
+        "targets": 11,
+        "filtered": 2
+    },
+    "2018-11239.sol:Hexagon": {
+        "targets": 3,
+        "filtered": 1
+    },
+    "2018-11335.sol:SPXToken": {
+        "targets": 3,
+        "filtered": 0
+    },
+    "2018-11411.sol:DimonCoin": {
+        "targets": 10,
+        "filtered": 2
+    },
+    "2018-11429.sol:ATL": {
+        "targets": 3,
+        "filtered": 0
+    },
+    "2018-11446.sol:GRX": {
+        "targets": 2,
+        "filtered": 0
+    },
+    "2018-11561.sol:StandardToken": {
+        "targets": 8,
+        "filtered": 4
+    },
+    "2018-11687.sol:BitcoinRed": {
+        "targets": 9,
+        "filtered": 4
+    },
+    "2018-12025-1.sol:FuturXe": {
+        "targets": 2,
+        "filtered": 0
+    },
+    "2018-12025-2.sol:RemiCoin": {
+        "targets": 2,
+        "filtered": 0
+    },
+    "2018-12025-3.sol:UselessEthereumToken": {
+        "targets": 15,
+        "filtered": 3
+    },
+    "2018-12062.sol:SwftCoin": {
+        "targets": 2,
+        "filtered": 0
+    },
+    "2018-12063.sol:INTToken": {
+        "targets": 2,
+        "filtered": 0
+    },
+    "2018-12067.sol:MyAdvancedToken": {
+        "targets": 2,
+        "filtered": 0
+    },
+    "2018-12068.sol:MyAdvancedToken": {
+        "targets": 2,
+        "filtered": 0
+    },
+    "2018-12070.sol:SECToken": {
+        "targets": 2,
+        "filtered": 0
+    },
+    "2018-12230.sol:RemiCoin": {
+        "targets": 2,
+        "filtered": 0
+    },
+    "2018-13041.sol:LinkToken": {
+        "targets": 2,
+        "filtered": 0
+    },
+    "2018-13068.sol:AzurionToken": {
+        "targets": 2,
+        "filtered": 0
+    },
+    "2018-13069.sol:DYC": {
+        "targets": 2,
+        "filtered": 0
+    },
+    "2018-13070.sol:EncryptedToken": {
+        "targets": 3,
+        "filtered": 0
+    },
+    "2018-13071.sol:CCindexToken": {
+        "targets": 9,
+        "filtered": 3
+    },
+    "2018-13072.sol:Coffeecoin": {
+        "targets": 4,
+        "filtered": 0
+    },
+    "2018-13073.sol:ETHEREUMBLACK": {
+        "targets": 2,
+        "filtered": 0
+    },
+    "2018-13074.sol:FIBToken": {
+        "targets": 2,
+        "filtered": 0
+    },
+    "2018-13075.sol:CarbonExchangeCoinToken": {
+        "targets": 3,
+        "filtered": 0
+    },
+    "2018-13076.sol:Betcash": {
+        "targets": 4,
+        "filtered": 0
+    },
+    "2018-13077.sol:CTB": {
+        "targets": 2,
+        "filtered": 0
+    },
+    "2018-13078.sol:Jitech": {
+        "targets": 1,
+        "filtered": 0
+    },
+    "2018-13079.sol:StandardToken": {
+        "targets": 2,
+        "filtered": 0
+    },
+    "2018-13080.sol:Goutex": {
+        "targets": 1,
+        "filtered": 0
+    },
+    "2018-13081.sol:GZSToken": {
+        "targets": 5,
+        "filtered": 0
+    },
+    "2018-13082.sol:MyAdvancedToken": {
+        "targets": 2,
+        "filtered": 0
+    },
+    "2018-13083.sol:PlazaToken": {
+        "targets": 2,
+        "filtered": 0
+    },
+    "2018-13084.sol:GoodTimeCoin": {
+        "targets": 2,
+        "filtered": 0
+    },
+    "2018-13085.sol:TokenERC20": {
+        "targets": 1,
+        "filtered": 0
+    },
+    "2018-13085.sol:FreeCoin": {
+        "targets": 2,
+        "filtered": 0
+    },
+    "2018-13086.sol:IADOWR": {
+        "targets": 2,
+        "filtered": 0
+    },
+    "2018-13087.sol:MyAdvancedToken": {
+        "targets": 2,
+        "filtered": 0
+    },
+    "2018-13088.sol:MyAdvancedToken": {
+        "targets": 2,
+        "filtered": 0
+    },
+    "2018-13089.sol:UCoinToken": {
+        "targets": 2,
+        "filtered": 0
+    },
+    "2018-13090.sol:YiTongCoin": {
+        "targets": 2,
+        "filtered": 0
+    },
+    "2018-13091.sol:sumocoin": {
+        "targets": 5,
+        "filtered": 1
+    },
+    "2018-13092.sol:AdvReimburseToken": {
+        "targets": 2,
+        "filtered": 0
+    },
+    "2018-13113.sol:StandardToken": {
+        "targets": 5,
+        "filtered": 3
+    },
+    "2018-13126.sol:SpendToken": {
+        "targets": 3,
+        "filtered": 0
+    },
+    "2018-13127.sol:DSPXToken": {
+        "targets": 3,
+        "filtered": 0
+    },
+    "2018-13128.sol:ETY": {
+        "targets": 3,
+        "filtered": 0
+    },
+    "2018-13129.sol:SPXToken": {
+        "targets": 3,
+        "filtered": 0
+    },
+    "2018-13131.sol:DSPXToken": {
+        "targets": 3,
+        "filtered": 0
+    },
+    "2018-13132.sol:SPXToken": {
+        "targets": 3,
+        "filtered": 0
+    },
+    "2018-13144.sol:StandardToken": {
+        "targets": 2,
+        "filtered": 1
+    },
+    "2018-13189.sol:UNLB": {
+        "targets": 2,
+        "filtered": 0
+    },
+    "2018-13202.sol:MyBoToken": {
+        "targets": 2,
+        "filtered": 0
+    },
+    "2018-13208.sol:MoneyTreeToken": {
+        "targets": 2,
+        "filtered": 0
+    },
+    "2018-13220.sol:MAVCash": {
+        "targets": 2,
+        "filtered": 0
+    },
+    "2018-13221.sol:ExtremeToken": {
+        "targets": 2,
+        "filtered": 0
+    },
+    "2018-13225.sol:token": {
+        "targets": 3,
+        "filtered": 3
+    },
+    "2018-13225.sol:MyYLCToken": {
+        "targets": 7,
+        "filtered": 4
+    },
+    "2018-13227.sol:MoneyChainNetToken": {
+        "targets": 2,
+        "filtered": 0
+    },
+    "2018-13228.sol:Crowdnext": {
+        "targets": 2,
+        "filtered": 0
+    },
+    "2018-13230.sol:DestiNeedToken": {
+        "targets": 2,
+        "filtered": 0
+    },
+    "2018-13325.sol:GrowToken": {
+        "targets": 1,
+        "filtered": 0
+    },
+    "2018-13326.sol:StandardToken": {
+        "targets": 5,
+        "filtered": 3
+    },
+    "2018-13327.sol:StandardToken": {
+        "targets": 5,
+        "filtered": 3
+    },
+    "2018-13493.sol:TokenERC20": {
+        "targets": 3,
+        "filtered": 1
+    },
+    "2018-13493.sol:DaddyToken": {
+        "targets": 7,
+        "filtered": 1
+    },
+    "2018-13533.sol:ALUXToken": {
+        "targets": 2,
+        "filtered": 0
+    },
+    "2018-13625.sol:Krown": {
+        "targets": 6,
+        "filtered": 2
+    },
+    "2018-13670.sol:GFCB": {
+        "targets": 3,
+        "filtered": 0
+    },
+    "2018-13698.sol:Play2LivePromo": {
+        "targets": 7,
+        "filtered": 0
+    },
+    "2018-13703.sol:CERB_Coin": {
+        "targets": 5,
+        "filtered": 1
+    },
+    "2018-13777.sol:RRToken": {
+        "targets": 2,
+        "filtered": 0
+    },
+    "2018-13778.sol:CGCToken": {
+        "targets": 2,
+        "filtered": 0
+    },
+    "2018-13779.sol:token": {
+        "targets": 3,
+        "filtered": 3
+    },
+    "2018-13779.sol:YLCToken": {
+        "targets": 7,
+        "filtered": 4
+    },
+    "2018-13782.sol:EnterCoin": {
+        "targets": 2,
+        "filtered": 0
+    },
+    "2018-13783.sol:TokenERC20": {
+        "targets": 1,
+        "filtered": 0
+    },
+    "2018-13783.sol:JiucaiToken": {
+        "targets": 2,
+        "filtered": 0
+    },
+    "2018-13836.sol:RocketCoin": {
+        "targets": 10,
+        "filtered": 5
+    },
+    "2018-14001.sol:ExtendetdToken": {
+        "targets": 4,
+        "filtered": 2
+    },
+    "2018-14002.sol:MP3Coin": {
+        "targets": 5,
+        "filtered": 3
+    },
+    "2018-14003.sol:WMCToken": {
+        "targets": 4,
+        "filtered": 2
+    },
+    "2018-14004.sol:Globecoin": {
+        "targets": 3,
+        "filtered": 1
+    },
+    "2018-14005.sol:MalaysianCoin": {
+        "targets": 9,
+        "filtered": 3
+    },
+    "2018-14006.sol:NGToken": {
+        "targets": 10,
+        "filtered": 3
+    },
+    "2018-14084.sol:MyAdvancedToken": {
+        "targets": 2,
+        "filtered": 0
+    },
+    "2018-14086.sol:MyToken": {
+        "targets": 2,
+        "filtered": 0
+    },
+    "2018-14087.sol:EncryptedToken": {
+        "targets": 2,
+        "filtered": 0
+    },
+    "2018-14576.sol:SunContractToken": {
+        "targets": 3,
+        "filtered": 2
+    },
+    "2018-17050.sol:PolyAi": {
+        "targets": 1,
+        "filtered": 0
+    },
+    "2018-18665.sol:StandardToken": {
+        "targets": 3,
+        "filtered": 2
+    },
+    "2018-18665.sol:NexxusToken": {
+        "targets": 2,
+        "filtered": 0
+    },
+    "2021-33403.sol:BlocklancerToken": {
+        "targets": 9,
+        "filtered": 1
+    },
+    "2021-34270.sol:Doftcoin": {
+        "targets": 2,
+        "filtered": 0
+    },
+    "BECToken.sol:PausableToken": {
+        "targets": 2,
+        "filtered": 1
+    },
+    "insecure_transfer.sol:IntegerOverflowAdd": {
+        "targets": 2,
+        "filtered": 1
+    },
+    "integer_overflow_add.sol:IntegerOverflowAdd": {
+        "targets": 1,
+        "filtered": 0
+    },
+    "integer_overflow_mapping_sym_1.sol:IntegerOverflowMappingSym1": {
+        "targets": 1,
+        "filtered": 0
+    },
+    "integer_overflow_minimal.sol:IntegerOverflowMinimal": {
+        "targets": 1,
+        "filtered": 0
+    },
+    "integer_overflow_mul.sol:IntegerOverflowMul": {
+        "targets": 1,
+        "filtered": 0
+    },
+    "integer_overflow_multitx_onefunc_feasible.sol:IntegerOverflowMultiTxOneFuncFeasible": {
+        "targets": 1,
+        "filtered": 0
+    },
+    "overflow_simple_add.sol:Overflow_Add": {
+        "targets": 1,
+        "filtered": 0
+    },
+    "overflow_single_tx.sol:IntegerOverflowSingleTransaction": {
+        "targets": 3,
+        "filtered": 0
+    },
+    "timelock.sol:TimeLock": {
+        "targets": 1,
+        "filtered": 0
+    },
+    "token.sol:Token": {
+        "targets": 3,
+        "filtered": 0
+    },
+    "tokensalechallenge.sol:TokenSaleChallenge": {
+        "targets": 4,
+        "filtered": 1
+    }
+}
